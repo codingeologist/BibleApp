@@ -28,8 +28,14 @@ def get_data():
     return gdf
 
 def make_map(gdf):
-    m = folium.Map(location=[gdf.iloc[1]['Lat'], gdf.iloc[1]['Lon']],tiles=MAPBOX_API, attr = 'Mapbox', zoom_start=6)
-    
+    m = folium.Map(location=[gdf.iloc[1]['Lat'], gdf.iloc[1]['Lon']],tiles=None, zoom_start=6)
+    ftr_grp1 = folium.FeatureGroup(name='Verse Locations')
+    ftr_grp2 = folium.FeatureGroup(name='Heat Map')
+    tile_layer = folium.TileLayer(tiles=MAPBOX_API,
+                                  min_zoom=0,
+                                  max_zoom=26,
+                                  attr='<a href=https://ebible.org/>© eBible</a> | <a href=http://www.openbible.info/>© OpenBible</a> | <a href=https://www.mapbox.com/about/maps/>© Mapbox</a>',
+                                  name='Mapbox Satellite')
     #points = folium.features.GeoJson(gdf)
     
     for i in range(len(gdf)):
@@ -40,11 +46,15 @@ def make_map(gdf):
         else:
             verse = str(gdf.iloc[i]['#ESV'])
             
-        folium.CircleMarker([X, Y], radius=2, weight=4, popup=folium.Popup(verse)).add_to(m)
+        folium.CircleMarker([X, Y], radius=2, weight=4, popup=folium.Popup(verse)).add_to(ftr_grp1)
         
     heatmap_data = [[row['Lat'], row['Lon']] for index, row in gdf.iterrows()]
-    HeatMap(heatmap_data).add_to(m)
+    HeatMap(heatmap_data).add_to(ftr_grp2)
     
+    m.add_child(tile_layer)
+    m.add_child(ftr_grp1)
+    m.add_child(ftr_grp2)
+    m.add_child(folium.map.LayerControl(position='topright', collapsed=True))
     m.save('map.html')
     
 if __name__ == '__main__':
