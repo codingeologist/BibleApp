@@ -8,7 +8,7 @@ import pandas as pd
 ##https://en.wikipedia.org/wiki/List_of_books_of_the_King_James_Version      ##
 ###############################################################################
 ###############################################################################
-def read_txt(txt):
+def read_txt(txt, cl_csv):
     df = pd.DataFrame(open(txt, 'r').read().splitlines(),columns=['DATA'])
     df[['BOOK']] = df['DATA'].str.split(' ').str[0]
     df[['CHAPTER_VERSE']] = df['DATA'].str.split(' ').str[1]
@@ -28,14 +28,18 @@ def read_txt(txt):
     dfwiki.columns = ['KING JAMES', 'VULGATE', 'RHEIMS', 'FULL']
     dfwiki['CODE'] = books
     dfwiki = dfwiki[['CODE', 'KING JAMES', 'VULGATE', 'RHEIMS', 'FULL']]
-    return df, dfwiki
     
-def save_db(df, dfwiki):
+    dflocs = pd.read_csv(cl_csv, header=0)
+    dflocs = pd.merge(dflocs, df, how='left', left_on=['BOOK', 'CHAPTER', 'VERSE'], right_on=['BOOK', 'CHAPTER', 'VERSE'])
+    
+    return df, dfwiki, dflocs
+    
+def save_db(df, dfwiki, dflocs):
     db = sqlite3.connect('./Data/BIBLE.db')
     dfwiki.to_sql('WIKI', db, if_exists='replace', index=False)
     df.to_sql('KJV', db, if_exists='replace', index=False)
-
+    dflocs.to_sql('LOCATIONS', db, if_exists='replace', index=False)
 
 if __name__ == '__main__':
-    df, dfwiki = read_txt('/Data/eng-kjv_vpl.txt')
-    save_db(df, dfwiki)
+    df, dfwiki, dflocs = read_txt('./Data/eng-kjv_vpl.txt', './DATA/CleanedLocations.csv')
+    save_db(df, dfwiki, dflocs)
