@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8ef357cc041c4bffa715ac12e3fb40bd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+</head>
+<body>    
+    <title>BibleMapApp - Hebrews Map</title>
+    
+            <div class="folium-map" id="map_8ef357cc041c4bffa715ac12e3fb40bd" ></div>
+        
+</body>
+<script>    
+    
+            var map_8ef357cc041c4bffa715ac12e3fb40bd = L.map(
+                "map_8ef357cc041c4bffa715ac12e3fb40bd",
+                {
+                    center: [30.108635999999997, 31.33877],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_93c0a5c3584c40f3a71321b8cf9f48e2 = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/codingeologist/ck9vc6aes0kwo1jn3ei75j6da/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiY29kaW5nZW9sb2dpc3QiLCJhIjoiY2s5dmMyZWp6MGEyNzNmbW9wNGVmcnV2diJ9.hk99FJ_5V5AMkbDHF0Dv5w",
+                {"attribution": "\u003ca href=https://ebible.org/\u003e\u00a9 eBible\u003c/a\u003e | \u003ca href=http://www.openbible.info/\u003e\u00a9 OpenBible\u003c/a\u003e | \u003ca href=https://www.mapbox.com/about/maps/\u003e\u00a9 Mapbox\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 26, "maxZoom": 26, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8ef357cc041c4bffa715ac12e3fb40bd);
+        
+    
+            var feature_group_1b9276f3b13e491d8485b76a36be31bd = L.featureGroup(
+                {}
+            ).addTo(map_8ef357cc041c4bffa715ac12e3fb40bd);
+        
+    
+            var circle_marker_1e14ff196a174a79b2138e57478da9a8 = L.circleMarker(
+                [30.108634999999996, 31.338769],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_1b9276f3b13e491d8485b76a36be31bd);
+        
+    
+        var popup_f14f4cc62f024f87b84d5e762354ef19 = L.popup({"maxWidth": 500});
+
+        
+            var html_fb0a6d6701024160b1ba712f82e47e97 = $(`<div id="html_fb0a6d6701024160b1ba712f82e47e97" style="width: 100.0%; height: 100.0%;">Egypt - On ¦¦ HEB 3:16 ¦¦ "For some, when they had heard, did provoke: howbeit not all that came out of Egypt by Moses."</div>`)[0];
+            popup_f14f4cc62f024f87b84d5e762354ef19.setContent(html_fb0a6d6701024160b1ba712f82e47e97);
+        
+
+        circle_marker_1e14ff196a174a79b2138e57478da9a8.bindPopup(popup_f14f4cc62f024f87b84d5e762354ef19)
+        ;
+
+        
+    
+    
+            var circle_marker_99561a565e514c3f818612a84ff1568a = L.circleMarker(
+                [30.108635999999997, 31.33877],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_1b9276f3b13e491d8485b76a36be31bd);
+        
+    
+        var popup_fd5e62e94ffc49bbab44234292b00094 = L.popup({"maxWidth": 500});
+
+        
+            var html_e4e1dc21b02f4a0aa2cd25f075725138 = $(`<div id="html_e4e1dc21b02f4a0aa2cd25f075725138" style="width: 100.0%; height: 100.0%;">Egypt - On ¦¦ HEB 8:9 ¦¦ "Not according to the covenant that I made with their fathers in the day when I took them by the hand to lead them out of the land of Egypt; because they continued not in my covenant, and I regarded them not, saith the Lord."</div>`)[0];
+            popup_fd5e62e94ffc49bbab44234292b00094.setContent(html_e4e1dc21b02f4a0aa2cd25f075725138);
+        
+
+        circle_marker_99561a565e514c3f818612a84ff1568a.bindPopup(popup_fd5e62e94ffc49bbab44234292b00094)
+        ;
+
+        
+    
+    
+            var circle_marker_6a49039f89c144068c1bb06378088c9f = L.circleMarker(
+                [30.108636999999998, 31.338771],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_1b9276f3b13e491d8485b76a36be31bd);
+        
+    
+        var popup_34a132c89fa446de973281fad3a05566 = L.popup({"maxWidth": 500});
+
+        
+            var html_79356f8ec07447aba4256e14affbadac = $(`<div id="html_79356f8ec07447aba4256e14affbadac" style="width: 100.0%; height: 100.0%;">Egypt - On ¦¦ HEB 11:26 ¦¦ "Esteeming the reproach of Christ greater riches than the treasures in Egypt: for he had respect unto the recompence of the reward."</div>`)[0];
+            popup_34a132c89fa446de973281fad3a05566.setContent(html_79356f8ec07447aba4256e14affbadac);
+        
+
+        circle_marker_6a49039f89c144068c1bb06378088c9f.bindPopup(popup_34a132c89fa446de973281fad3a05566)
+        ;
+
+        
+    
+    
+            var circle_marker_02a332bc33634ffa87c015d5b3635e6d = L.circleMarker(
+                [30.108638, 31.338772],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_1b9276f3b13e491d8485b76a36be31bd);
+        
+    
+        var popup_1095ee5a158f4f65b0410ad38b123827 = L.popup({"maxWidth": 500});
+
+        
+            var html_8172574fa69543e4a3931c56a332ba1d = $(`<div id="html_8172574fa69543e4a3931c56a332ba1d" style="width: 100.0%; height: 100.0%;">Egypt - On ¦¦ HEB 11:27 ¦¦ "By faith he forsook Egypt, not fearing the wrath of the king: for he endured, as seeing him who is invisible."</div>`)[0];
+            popup_1095ee5a158f4f65b0410ad38b123827.setContent(html_8172574fa69543e4a3931c56a332ba1d);
+        
+
+        circle_marker_02a332bc33634ffa87c015d5b3635e6d.bindPopup(popup_1095ee5a158f4f65b0410ad38b123827)
+        ;
+
+        
+    
+    
+            var circle_marker_d80aa17eb64b4867bdba3e32157f92bb = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_1b9276f3b13e491d8485b76a36be31bd);
+        
+    
+        var popup_0120964d5c874829aace6ecb38fe23c5 = L.popup({"maxWidth": 500});
+
+        
+            var html_38a62a53cdd5429eb183e239f2e1d3ac = $(`<div id="html_38a62a53cdd5429eb183e239f2e1d3ac" style="width: 100.0%; height: 100.0%;">Holy Place 2 - Jerusalem ¦¦ HEB 9:2 ¦¦ "For there was a tabernacle made; the first, wherein [was] the candlestick, and the table, and the shewbread; which is called the sanctuary."</div>`)[0];
+            popup_0120964d5c874829aace6ecb38fe23c5.setContent(html_38a62a53cdd5429eb183e239f2e1d3ac);
+        
+
+        circle_marker_d80aa17eb64b4867bdba3e32157f92bb.bindPopup(popup_0120964d5c874829aace6ecb38fe23c5)
+        ;
+
+        
+    
+    
+            var circle_marker_0569bed5754c4d0082c85daa253d9549 = L.circleMarker(
+                [41.9, 12.48333333],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_1b9276f3b13e491d8485b76a36be31bd);
+        
+    
+        var popup_bec5361b1ac84407bed7f18b2c80fe93 = L.popup({"maxWidth": 500});
+
+        
+            var html_b8b175ffc0a4429e9d567b2514f3d2a4 = $(`<div id="html_b8b175ffc0a4429e9d567b2514f3d2a4" style="width: 100.0%; height: 100.0%;">Italy - Rome ¦¦ HEB 13:24 ¦¦ "Salute all them that have the rule over you, and all the saints. They of Italy salute you."</div>`)[0];
+            popup_bec5361b1ac84407bed7f18b2c80fe93.setContent(html_b8b175ffc0a4429e9d567b2514f3d2a4);
+        
+
+        circle_marker_0569bed5754c4d0082c85daa253d9549.bindPopup(popup_bec5361b1ac84407bed7f18b2c80fe93)
+        ;
+
+        
+    
+    
+            var circle_marker_024d8a3bb13d4a2c89f5021c8abc249e = L.circleMarker(
+                [31.87060144, 35.44386371],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_1b9276f3b13e491d8485b76a36be31bd);
+        
+    
+        var popup_447d70f257e347a4beef2eed5571df11 = L.popup({"maxWidth": 500});
+
+        
+            var html_54560bcab51444ecb2cf28e5bf6b9a23 = $(`<div id="html_54560bcab51444ecb2cf28e5bf6b9a23" style="width: 100.0%; height: 100.0%;">Jericho - None ¦¦ HEB 11:30 ¦¦ "By faith the walls of Jericho fell down, after they were compassed about seven days."</div>`)[0];
+            popup_447d70f257e347a4beef2eed5571df11.setContent(html_54560bcab51444ecb2cf28e5bf6b9a23);
+        
+
+        circle_marker_024d8a3bb13d4a2c89f5021c8abc249e.bindPopup(popup_447d70f257e347a4beef2eed5571df11)
+        ;
+
+        
+    
+    
+            var circle_marker_c7a04735babd4683ab47623f5cef063c = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_1b9276f3b13e491d8485b76a36be31bd);
+        
+    
+        var popup_63c744bb603045c0aab76d886ddf6dfd = L.popup({"maxWidth": 500});
+
+        
+            var html_05fcf2d36db44357b782f2472995a315 = $(`<div id="html_05fcf2d36db44357b782f2472995a315" style="width: 100.0%; height: 100.0%;">Jerusalem - None ¦¦ HEB 12:22 ¦¦ "But ye are come unto mount Sion, and unto the city of the living God, the heavenly Jerusalem, and to an innumerable company of angels,"</div>`)[0];
+            popup_63c744bb603045c0aab76d886ddf6dfd.setContent(html_05fcf2d36db44357b782f2472995a315);
+        
+
+        circle_marker_c7a04735babd4683ab47623f5cef063c.bindPopup(popup_63c744bb603045c0aab76d886ddf6dfd)
+        ;
+
+        
+    
+    
+            var circle_marker_9ab3fafbc1594f8e93258ace0db7f760 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_1b9276f3b13e491d8485b76a36be31bd);
+        
+    
+        var popup_ae0e565a9f874ddb8514e44c96092cc0 = L.popup({"maxWidth": 500});
+
+        
+            var html_d74086cc95b747f287e207a9d49d077f = $(`<div id="html_d74086cc95b747f287e207a9d49d077f" style="width: 100.0%; height: 100.0%;">Most Holy Place 2 - Jerusalem ¦¦ HEB 9:3 ¦¦ "And after the second veil, the tabernacle which is called the Holiest of all;"</div>`)[0];
+            popup_ae0e565a9f874ddb8514e44c96092cc0.setContent(html_d74086cc95b747f287e207a9d49d077f);
+        
+
+        circle_marker_9ab3fafbc1594f8e93258ace0db7f760.bindPopup(popup_ae0e565a9f874ddb8514e44c96092cc0)
+        ;
+
+        
+    
+    
+            var circle_marker_78a5b328baba4c76b1a25a6df9a09ea2 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_1b9276f3b13e491d8485b76a36be31bd);
+        
+    
+        var popup_8f2acb1de82f4f01b1c0fe5c439e5609 = L.popup({"maxWidth": 500});
+
+        
+            var html_f5d6d245742848e3a8f9d4cf9a88a0ac = $(`<div id="html_f5d6d245742848e3a8f9d4cf9a88a0ac" style="width: 100.0%; height: 100.0%;">Mount Zion - Jerusalem ¦¦ HEB 12:22 ¦¦ "But ye are come unto mount Sion, and unto the city of the living God, the heavenly Jerusalem, and to an innumerable company of angels,"</div>`)[0];
+            popup_8f2acb1de82f4f01b1c0fe5c439e5609.setContent(html_f5d6d245742848e3a8f9d4cf9a88a0ac);
+        
+
+        circle_marker_78a5b328baba4c76b1a25a6df9a09ea2.bindPopup(popup_8f2acb1de82f4f01b1c0fe5c439e5609)
+        ;
+
+        
+    
+    
+            var circle_marker_b71387c684194cdfa6de923567ae1922 = L.circleMarker(
+                [27.088472999999997, 34.771729],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_1b9276f3b13e491d8485b76a36be31bd);
+        
+    
+        var popup_033a50d5172945dc82ece18deddc1e37 = L.popup({"maxWidth": 500});
+
+        
+            var html_0dd8fe50969748dcbdc617bb53a9e669 = $(`<div id="html_0dd8fe50969748dcbdc617bb53a9e669" style="width: 100.0%; height: 100.0%;">Red Sea - None ¦¦ HEB 11:29 ¦¦ "By faith they passed through the Red sea as by dry [land]: which the Egyptians assaying to do were drowned."</div>`)[0];
+            popup_033a50d5172945dc82ece18deddc1e37.setContent(html_0dd8fe50969748dcbdc617bb53a9e669);
+        
+
+        circle_marker_b71387c684194cdfa6de923567ae1922.bindPopup(popup_033a50d5172945dc82ece18deddc1e37)
+        ;
+
+        
+    
+    
+            var circle_marker_634f050b28d14da29e05858a72b0f605 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_1b9276f3b13e491d8485b76a36be31bd);
+        
+    
+        var popup_69deb160ff3e4c1aa7f2ebf55389c074 = L.popup({"maxWidth": 500});
+
+        
+            var html_9bc68e8885b54c9895b4b35816ead1b9 = $(`<div id="html_9bc68e8885b54c9895b4b35816ead1b9" style="width: 100.0%; height: 100.0%;">Salem - Jerusalem ¦¦ HEB 7:1 ¦¦ "For this Melchisedec, king of Salem, priest of the most high God, who met Abraham returning from the slaughter of the kings, and blessed him;"</div>`)[0];
+            popup_69deb160ff3e4c1aa7f2ebf55389c074.setContent(html_9bc68e8885b54c9895b4b35816ead1b9);
+        
+
+        circle_marker_634f050b28d14da29e05858a72b0f605.bindPopup(popup_69deb160ff3e4c1aa7f2ebf55389c074)
+        ;
+
+        
+    
+    
+            var circle_marker_0877e5dc78604470beedee10f35d1231 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_1b9276f3b13e491d8485b76a36be31bd);
+        
+    
+        var popup_256bcd2691554824a4aa8ad13ea19082 = L.popup({"maxWidth": 500});
+
+        
+            var html_96768cce2a1641d1971926794eb3e3a8 = $(`<div id="html_96768cce2a1641d1971926794eb3e3a8" style="width: 100.0%; height: 100.0%;">Salem - Jerusalem ¦¦ HEB 7:2 ¦¦ "To whom also Abraham gave a tenth part of all; first being by interpretation King of righteousness, and after that also King of Salem, which is, King of peace;"</div>`)[0];
+            popup_256bcd2691554824a4aa8ad13ea19082.setContent(html_96768cce2a1641d1971926794eb3e3a8);
+        
+
+        circle_marker_0877e5dc78604470beedee10f35d1231.bindPopup(popup_256bcd2691554824a4aa8ad13ea19082)
+        ;
+
+        
+    
+    
+            var feature_group_020ffa720974484baca259f4fe3c8f94 = L.featureGroup(
+                {}
+            ).addTo(map_8ef357cc041c4bffa715ac12e3fb40bd);
+        
+    
+            var heat_map_20b22bc90b744585b2576e81a066d104 = L.heatLayer(
+                [[30.108634999999996, 31.338769], [30.108635999999997, 31.33877], [30.108636999999998, 31.338771], [30.108638, 31.338772], [31.777444, 35.234935], [41.9, 12.48333333], [31.87060144, 35.44386371], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [27.088472999999997, 34.771729], [31.777444, 35.234935], [31.777444, 35.234935]],
+                {"blur": 15, "max": 1.0, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
+            ).addTo(feature_group_020ffa720974484baca259f4fe3c8f94);
+        
+    
+            var layer_control_52da9d438634470c88aaf437ff6d34ba = {
+                base_layers : {
+                    "Mapbox Satellite" : tile_layer_93c0a5c3584c40f3a71321b8cf9f48e2,
+                },
+                overlays :  {
+                    "Verse Locations" : feature_group_1b9276f3b13e491d8485b76a36be31bd,
+                    "Heat Map" : feature_group_020ffa720974484baca259f4fe3c8f94,
+                },
+            };
+            L.control.layers(
+                layer_control_52da9d438634470c88aaf437ff6d34ba.base_layers,
+                layer_control_52da9d438634470c88aaf437ff6d34ba.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_8ef357cc041c4bffa715ac12e3fb40bd);
+        
+</script>

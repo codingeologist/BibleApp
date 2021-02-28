@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b1ca0bb54bee42f1b15fd5d8e3126cd1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+</head>
+<body>    
+    <title>BibleMapApp - Song of Solomon Map</title>
+    
+            <div class="folium-map" id="map_b1ca0bb54bee42f1b15fd5d8e3126cd1" ></div>
+        
+</body>
+<script>    
+    
+            var map_b1ca0bb54bee42f1b15fd5d8e3126cd1 = L.map(
+                "map_b1ca0bb54bee42f1b15fd5d8e3126cd1",
+                {
+                    center: [33.41615982, 35.85725618],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_eab3c3d09dd7471ba6c36390c761719c = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/codingeologist/ck9vc6aes0kwo1jn3ei75j6da/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiY29kaW5nZW9sb2dpc3QiLCJhIjoiY2s5dmMyZWp6MGEyNzNmbW9wNGVmcnV2diJ9.hk99FJ_5V5AMkbDHF0Dv5w",
+                {"attribution": "\u003ca href=https://ebible.org/\u003e\u00a9 eBible\u003c/a\u003e | \u003ca href=http://www.openbible.info/\u003e\u00a9 OpenBible\u003c/a\u003e | \u003ca href=https://www.mapbox.com/about/maps/\u003e\u00a9 Mapbox\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 26, "maxZoom": 26, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b1ca0bb54bee42f1b15fd5d8e3126cd1);
+        
+    
+            var feature_group_c71381cada4445d38225fd1286466bb2 = L.featureGroup(
+                {}
+            ).addTo(map_b1ca0bb54bee42f1b15fd5d8e3126cd1);
+        
+    
+            var circle_marker_45342035fe724358ba8c076230c2778b = L.circleMarker(
+                [33.68137, 36.055039],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_e763781b5b9a49369a62f75f87d1f597 = L.popup({"maxWidth": 500});
+
+        
+            var html_d2a102b54a02438b949278f5be772e41 = $(`<div id="html_d2a102b54a02438b949278f5be772e41" style="width: 100.0%; height: 100.0%;">Amana - None ¦¦ SOL 4:8 ¦¦ " Come with me from Lebanon, [my] spouse, with me from Lebanon: look from the top of Amana, from the top of Shenir and Hermon, from the lionsâ€™ dens, from the mountains of the leopards."</div>`)[0];
+            popup_e763781b5b9a49369a62f75f87d1f597.setContent(html_d2a102b54a02438b949278f5be772e41);
+        
+
+        circle_marker_45342035fe724358ba8c076230c2778b.bindPopup(popup_e763781b5b9a49369a62f75f87d1f597)
+        ;
+
+        
+    
+    
+            var circle_marker_df02ccc9f40746de809dbf8dd9740fa8 = L.circleMarker(
+                [33.41615982, 35.85725618],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_87f6a3ed58484873bdcceeb55b8c4883 = L.popup({"maxWidth": 500});
+
+        
+            var html_440b3056e43545db9498a7372713cfee = $(`<div id="html_440b3056e43545db9498a7372713cfee" style="width: 100.0%; height: 100.0%;">Baal-hamon - Mount Hermon ¦¦ SOL 8:11 ¦¦ "Solomon had a vineyard at Baal-hamon; he let out the vineyard unto keepers; every one for the fruit thereof was to bring a thousand [pieces] of silver."</div>`)[0];
+            popup_87f6a3ed58484873bdcceeb55b8c4883.setContent(html_440b3056e43545db9498a7372713cfee);
+        
+
+        circle_marker_df02ccc9f40746de809dbf8dd9740fa8.bindPopup(popup_87f6a3ed58484873bdcceeb55b8c4883)
+        ;
+
+        
+    
+    
+            var circle_marker_6eff2b9c98ef44e3bb828b10b892618e = L.circleMarker(
+                [31.80052001, 35.80901867],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_20e8b6b4180e49fa8c48012556356249 = L.popup({"maxWidth": 500});
+
+        
+            var html_ee3b2c4a8a1a475aad10b70dad6592be = $(`<div id="html_ee3b2c4a8a1a475aad10b70dad6592be" style="width: 100.0%; height: 100.0%;">Bath-rabbim - Heshbon ¦¦ SOL 7:4 ¦¦ "Thy neck [is] as a tower of ivory; thine eyes [like] the fishpools in Heshbon, by the gate of Bath-rabbim: thy nose [is] as the tower of Lebanon which looketh toward Damascus."</div>`)[0];
+            popup_20e8b6b4180e49fa8c48012556356249.setContent(html_ee3b2c4a8a1a475aad10b70dad6592be);
+        
+
+        circle_marker_6eff2b9c98ef44e3bb828b10b892618e.bindPopup(popup_20e8b6b4180e49fa8c48012556356249)
+        ;
+
+        
+    
+    
+            var circle_marker_4897e96742f449348c79a32812df8574 = L.circleMarker(
+                [31.43333152, 35.13333189],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_84b83bf12e004957a266d4031f788d01 = L.popup({"maxWidth": 500});
+
+        
+            var html_9e1270d403ba4dc689182ca8bd0b5f5f = $(`<div id="html_9e1270d403ba4dc689182ca8bd0b5f5f" style="width: 100.0%; height: 100.0%;">Carmel - None ¦¦ SOL 7:5 ¦¦ "Thine head upon thee [is] like Carmel, and the hair of thine head like purple; the king [is] held in the galleries."</div>`)[0];
+            popup_84b83bf12e004957a266d4031f788d01.setContent(html_9e1270d403ba4dc689182ca8bd0b5f5f);
+        
+
+        circle_marker_4897e96742f449348c79a32812df8574.bindPopup(popup_84b83bf12e004957a266d4031f788d01)
+        ;
+
+        
+    
+    
+            var circle_marker_5010b50faa2e47f6a841c4998a6d29af = L.circleMarker(
+                [33.519299, 36.31345],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_221719b5c8ff4cd0b375a9bc139ad880 = L.popup({"maxWidth": 500});
+
+        
+            var html_eef72cb9499647a78aeb43a6276be726 = $(`<div id="html_eef72cb9499647a78aeb43a6276be726" style="width: 100.0%; height: 100.0%;">Damascus - None ¦¦ SOL 7:4 ¦¦ "Thy neck [is] as a tower of ivory; thine eyes [like] the fishpools in Heshbon, by the gate of Bath-rabbim: thy nose [is] as the tower of Lebanon which looketh toward Damascus."</div>`)[0];
+            popup_221719b5c8ff4cd0b375a9bc139ad880.setContent(html_eef72cb9499647a78aeb43a6276be726);
+        
+
+        circle_marker_5010b50faa2e47f6a841c4998a6d29af.bindPopup(popup_221719b5c8ff4cd0b375a9bc139ad880)
+        ;
+
+        
+    
+    
+            var circle_marker_366f42e0ee6a4a48ad38ed532bc049e0 = L.circleMarker(
+                [31.46152536, 35.39241108],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_70ceb34fd05a400b97c54ad497d88db9 = L.popup({"maxWidth": 500});
+
+        
+            var html_5ef5cdb690cd4c29bfa5f29b49fe8b71 = $(`<div id="html_5ef5cdb690cd4c29bfa5f29b49fe8b71" style="width: 100.0%; height: 100.0%;">Engedi - None ¦¦ SOL 1:14 ¦¦ "My beloved [is] unto me [as] a cluster of camphire in the vineyards of En-gedi."</div>`)[0];
+            popup_70ceb34fd05a400b97c54ad497d88db9.setContent(html_5ef5cdb690cd4c29bfa5f29b49fe8b71);
+        
+
+        circle_marker_366f42e0ee6a4a48ad38ed532bc049e0.bindPopup(popup_70ceb34fd05a400b97c54ad497d88db9)
+        ;
+
+        
+    
+    
+            var circle_marker_ecb097a5a8a74b20bf0e82ff35d09669 = L.circleMarker(
+                [32.042522999999996, 35.724241],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_9f30b2f0b8eb458c9b31526ca25c9907 = L.popup({"maxWidth": 500});
+
+        
+            var html_7369f8855560432b82ff0089752c901a = $(`<div id="html_7369f8855560432b82ff0089752c901a" style="width: 100.0%; height: 100.0%;">Gilead - None ¦¦ SOL 4:1 ¦¦ "Behold, thou [art] fair, my love; behold, thou [art] fair; thou [hast] dovesâ€™ eyes within thy locks: thy hair [is] as a flock of goats, that appear from mount Gilead."</div>`)[0];
+            popup_9f30b2f0b8eb458c9b31526ca25c9907.setContent(html_7369f8855560432b82ff0089752c901a);
+        
+
+        circle_marker_ecb097a5a8a74b20bf0e82ff35d09669.bindPopup(popup_9f30b2f0b8eb458c9b31526ca25c9907)
+        ;
+
+        
+    
+    
+            var circle_marker_9e922f35840645f58f3d8e3bf20c00a0 = L.circleMarker(
+                [32.042522999999996, 35.724241],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_d521446d8110435dac371ed761be659f = L.popup({"maxWidth": 500});
+
+        
+            var html_90a964581840408cacf715158e77d22c = $(`<div id="html_90a964581840408cacf715158e77d22c" style="width: 100.0%; height: 100.0%;">Gilead - None ¦¦ SOL 6:5 ¦¦ "Turn away thine eyes from me, for they have overcome me: thy hair [is] as a flock of goats that appear from Gilead."</div>`)[0];
+            popup_d521446d8110435dac371ed761be659f.setContent(html_90a964581840408cacf715158e77d22c);
+        
+
+        circle_marker_9e922f35840645f58f3d8e3bf20c00a0.bindPopup(popup_d521446d8110435dac371ed761be659f)
+        ;
+
+        
+    
+    
+            var circle_marker_63752602e03341039ac402715e42dcb1 = L.circleMarker(
+                [33.41615982, 35.85725618],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_7f31757ee6104a959b36f54f136dfaa1 = L.popup({"maxWidth": 500});
+
+        
+            var html_e63404bb0b514f84a807043b576e15bb = $(`<div id="html_e63404bb0b514f84a807043b576e15bb" style="width: 100.0%; height: 100.0%;">Hermon - Mount Hermon ¦¦ SOL 4:8 ¦¦ " Come with me from Lebanon, [my] spouse, with me from Lebanon: look from the top of Amana, from the top of Shenir and Hermon, from the lionsâ€™ dens, from the mountains of the leopards."</div>`)[0];
+            popup_7f31757ee6104a959b36f54f136dfaa1.setContent(html_e63404bb0b514f84a807043b576e15bb);
+        
+
+        circle_marker_63752602e03341039ac402715e42dcb1.bindPopup(popup_7f31757ee6104a959b36f54f136dfaa1)
+        ;
+
+        
+    
+    
+            var circle_marker_002bf054dfec4fb29cb99158ca7f8cad = L.circleMarker(
+                [31.80052001, 35.80901867],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_2fd77e171b254af0baa0ae6a807d0870 = L.popup({"maxWidth": 500});
+
+        
+            var html_2084e9ef5dd14f6f9a09aa5383787c15 = $(`<div id="html_2084e9ef5dd14f6f9a09aa5383787c15" style="width: 100.0%; height: 100.0%;">Heshbon - None ¦¦ SOL 7:4 ¦¦ "Thy neck [is] as a tower of ivory; thine eyes [like] the fishpools in Heshbon, by the gate of Bath-rabbim: thy nose [is] as the tower of Lebanon which looketh toward Damascus."</div>`)[0];
+            popup_2fd77e171b254af0baa0ae6a807d0870.setContent(html_2084e9ef5dd14f6f9a09aa5383787c15);
+        
+
+        circle_marker_002bf054dfec4fb29cb99158ca7f8cad.bindPopup(popup_2fd77e171b254af0baa0ae6a807d0870)
+        ;
+
+        
+    
+    
+            var circle_marker_e4650d2c51cb4517b67381a201527bcc = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_a9e67b1a170f4d7ab12abf41773e4682 = L.popup({"maxWidth": 500});
+
+        
+            var html_5be822861bde4f188759f055594d18be = $(`<div id="html_5be822861bde4f188759f055594d18be" style="width: 100.0%; height: 100.0%;">Jerusalem - None ¦¦ SOL 1:5 ¦¦ "I [am] black, but comely, O ye daughters of Jerusalem, as the tents of Kedar, as the curtains of Solomon."</div>`)[0];
+            popup_a9e67b1a170f4d7ab12abf41773e4682.setContent(html_5be822861bde4f188759f055594d18be);
+        
+
+        circle_marker_e4650d2c51cb4517b67381a201527bcc.bindPopup(popup_a9e67b1a170f4d7ab12abf41773e4682)
+        ;
+
+        
+    
+    
+            var circle_marker_4e0db462985b49268facf2b36633cb68 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_a0a0ff01693a45c396e1aa1bdda1800a = L.popup({"maxWidth": 500});
+
+        
+            var html_d2dc512a194940ed90e42cf4663d1596 = $(`<div id="html_d2dc512a194940ed90e42cf4663d1596" style="width: 100.0%; height: 100.0%;">Jerusalem - None ¦¦ SOL 2:7 ¦¦ "I charge you, O ye daughters of Jerusalem, by the roes, and by the hinds of the field, that ye stir not up, nor awake [my] love, till he please."</div>`)[0];
+            popup_a0a0ff01693a45c396e1aa1bdda1800a.setContent(html_d2dc512a194940ed90e42cf4663d1596);
+        
+
+        circle_marker_4e0db462985b49268facf2b36633cb68.bindPopup(popup_a0a0ff01693a45c396e1aa1bdda1800a)
+        ;
+
+        
+    
+    
+            var circle_marker_fbfed8a484a94410b889d668758f88cc = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_dc102fd1b86d4cf8a4044d0ed7ddd280 = L.popup({"maxWidth": 500});
+
+        
+            var html_9a503ee78b254a15b0333cde9b396541 = $(`<div id="html_9a503ee78b254a15b0333cde9b396541" style="width: 100.0%; height: 100.0%;">Jerusalem - None ¦¦ SOL 3:5 ¦¦ "I charge you, O ye daughters of Jerusalem, by the roes, and by the hinds of the field, that ye stir not up, nor awake [my] love, till he please."</div>`)[0];
+            popup_dc102fd1b86d4cf8a4044d0ed7ddd280.setContent(html_9a503ee78b254a15b0333cde9b396541);
+        
+
+        circle_marker_fbfed8a484a94410b889d668758f88cc.bindPopup(popup_dc102fd1b86d4cf8a4044d0ed7ddd280)
+        ;
+
+        
+    
+    
+            var circle_marker_f309385e081f4419a0b1ff2d2ceade11 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_df5b98ebe4de4a7f9255ffd0602af325 = L.popup({"maxWidth": 500});
+
+        
+            var html_710daefc45064752a7deed632353fe60 = $(`<div id="html_710daefc45064752a7deed632353fe60" style="width: 100.0%; height: 100.0%;">Jerusalem - None ¦¦ SOL 3:10 ¦¦ "He made the pillars thereof [of] silver, the bottom thereof [of] gold, the covering of it [of] purple, the midst thereof being paved [with] love, for the daughters of Jerusalem."</div>`)[0];
+            popup_df5b98ebe4de4a7f9255ffd0602af325.setContent(html_710daefc45064752a7deed632353fe60);
+        
+
+        circle_marker_f309385e081f4419a0b1ff2d2ceade11.bindPopup(popup_df5b98ebe4de4a7f9255ffd0602af325)
+        ;
+
+        
+    
+    
+            var circle_marker_a066060945e24175b78b43d9e4ce39a9 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_8683f38cbfbb4442897b120220bb865f = L.popup({"maxWidth": 500});
+
+        
+            var html_4edf0d6ec7574bd7bb5ce4927583bc73 = $(`<div id="html_4edf0d6ec7574bd7bb5ce4927583bc73" style="width: 100.0%; height: 100.0%;">Jerusalem - None ¦¦ SOL 5:8 ¦¦ "I charge you, O daughters of Jerusalem, if ye find my beloved, that ye tell him, that I [am] sick of love."</div>`)[0];
+            popup_8683f38cbfbb4442897b120220bb865f.setContent(html_4edf0d6ec7574bd7bb5ce4927583bc73);
+        
+
+        circle_marker_a066060945e24175b78b43d9e4ce39a9.bindPopup(popup_8683f38cbfbb4442897b120220bb865f)
+        ;
+
+        
+    
+    
+            var circle_marker_158f4e27c04947c794049c2c7bf49763 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_dd2e280e24a9487a9630c1e168fc3aba = L.popup({"maxWidth": 500});
+
+        
+            var html_face1e22b24641c7aaf02b73c6b0b34a = $(`<div id="html_face1e22b24641c7aaf02b73c6b0b34a" style="width: 100.0%; height: 100.0%;">Jerusalem - None ¦¦ SOL 5:16 ¦¦ "His mouth [is] most sweet: yea, he [is] altogether lovely. This [is] my beloved, and this [is] my friend, O daughters of Jerusalem."</div>`)[0];
+            popup_dd2e280e24a9487a9630c1e168fc3aba.setContent(html_face1e22b24641c7aaf02b73c6b0b34a);
+        
+
+        circle_marker_158f4e27c04947c794049c2c7bf49763.bindPopup(popup_dd2e280e24a9487a9630c1e168fc3aba)
+        ;
+
+        
+    
+    
+            var circle_marker_8178a32b886746a3a4944785a23cb02a = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_308557d0aeaa4841bed2b6ecbceff5db = L.popup({"maxWidth": 500});
+
+        
+            var html_9466d6f83e0a49aabc6b3eff519f3c1a = $(`<div id="html_9466d6f83e0a49aabc6b3eff519f3c1a" style="width: 100.0%; height: 100.0%;">Jerusalem - None ¦¦ SOL 6:4 ¦¦ " Thou [art] beautiful, O my love, as Tirzah, comely as Jerusalem, terrible as [an army] with banners."</div>`)[0];
+            popup_308557d0aeaa4841bed2b6ecbceff5db.setContent(html_9466d6f83e0a49aabc6b3eff519f3c1a);
+        
+
+        circle_marker_8178a32b886746a3a4944785a23cb02a.bindPopup(popup_308557d0aeaa4841bed2b6ecbceff5db)
+        ;
+
+        
+    
+    
+            var circle_marker_8e9186deb5f54e75aaecf9e98b01262e = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_fcdb2a52d2844e94803532ccd6be835b = L.popup({"maxWidth": 500});
+
+        
+            var html_d3c76fb804a14db09eebe8906b582a50 = $(`<div id="html_d3c76fb804a14db09eebe8906b582a50" style="width: 100.0%; height: 100.0%;">Jerusalem - None ¦¦ SOL 8:4 ¦¦ "I charge you, O daughters of Jerusalem, that ye stir not up, nor awake [my] love, until he please."</div>`)[0];
+            popup_fcdb2a52d2844e94803532ccd6be835b.setContent(html_d3c76fb804a14db09eebe8906b582a50);
+        
+
+        circle_marker_8e9186deb5f54e75aaecf9e98b01262e.bindPopup(popup_fcdb2a52d2844e94803532ccd6be835b)
+        ;
+
+        
+    
+    
+            var circle_marker_9c156a17743d4ebeba21ca328235d498 = L.circleMarker(
+                [27.4, 37.7],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_b518ef268f104109bc915173c1da83a7 = L.popup({"maxWidth": 500});
+
+        
+            var html_b5d051f0f770414285fe8baddf9a9f32 = $(`<div id="html_b5d051f0f770414285fe8baddf9a9f32" style="width: 100.0%; height: 100.0%;">Kedar - Arabia ¦¦ SOL 1:5 ¦¦ "I [am] black, but comely, O ye daughters of Jerusalem, as the tents of Kedar, as the curtains of Solomon."</div>`)[0];
+            popup_b518ef268f104109bc915173c1da83a7.setContent(html_b5d051f0f770414285fe8baddf9a9f32);
+        
+
+        circle_marker_9c156a17743d4ebeba21ca328235d498.bindPopup(popup_b518ef268f104109bc915173c1da83a7)
+        ;
+
+        
+    
+    
+            var circle_marker_57cd2e59bcb64b98b3a34b86d8878ad7 = L.circleMarker(
+                [33.752479, 35.590804],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_cf368cd32cc0493aa689e30e325defd3 = L.popup({"maxWidth": 500});
+
+        
+            var html_ac5d068334d34b62a302639912d35d2c = $(`<div id="html_ac5d068334d34b62a302639912d35d2c" style="width: 100.0%; height: 100.0%;">Lebanon - None ¦¦ SOL 3:9 ¦¦ "King Solomon made himself a chariot of the wood of Lebanon."</div>`)[0];
+            popup_cf368cd32cc0493aa689e30e325defd3.setContent(html_ac5d068334d34b62a302639912d35d2c);
+        
+
+        circle_marker_57cd2e59bcb64b98b3a34b86d8878ad7.bindPopup(popup_cf368cd32cc0493aa689e30e325defd3)
+        ;
+
+        
+    
+    
+            var circle_marker_70b59164fb1e421db36287d4b64107db = L.circleMarker(
+                [33.752479, 35.590804],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_a4a4b93679cd4295adc62d67673f90f4 = L.popup({"maxWidth": 500});
+
+        
+            var html_5cc8c24bbedf4cbc8b9ad0513866dbc4 = $(`<div id="html_5cc8c24bbedf4cbc8b9ad0513866dbc4" style="width: 100.0%; height: 100.0%;">Lebanon - None ¦¦ SOL 4:8 ¦¦ " Come with me from Lebanon, [my] spouse, with me from Lebanon: look from the top of Amana, from the top of Shenir and Hermon, from the lionsâ€™ dens, from the mountains of the leopards."</div>`)[0];
+            popup_a4a4b93679cd4295adc62d67673f90f4.setContent(html_5cc8c24bbedf4cbc8b9ad0513866dbc4);
+        
+
+        circle_marker_70b59164fb1e421db36287d4b64107db.bindPopup(popup_a4a4b93679cd4295adc62d67673f90f4)
+        ;
+
+        
+    
+    
+            var circle_marker_4ba05e4bffc545d78b6ec1da3a9c4dd6 = L.circleMarker(
+                [33.752479, 35.590804],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_3b82db49e6154703bbee5ae5a53c8d2c = L.popup({"maxWidth": 500});
+
+        
+            var html_65889b43e4ea4d29adb341113752d3ac = $(`<div id="html_65889b43e4ea4d29adb341113752d3ac" style="width: 100.0%; height: 100.0%;">Lebanon - None ¦¦ SOL 4:11 ¦¦ "Thy lips, O [my] spouse, drop [as] the honeycomb: honey and milk [are] under thy tongue; and the smell of thy garments [is] like the smell of Lebanon."</div>`)[0];
+            popup_3b82db49e6154703bbee5ae5a53c8d2c.setContent(html_65889b43e4ea4d29adb341113752d3ac);
+        
+
+        circle_marker_4ba05e4bffc545d78b6ec1da3a9c4dd6.bindPopup(popup_3b82db49e6154703bbee5ae5a53c8d2c)
+        ;
+
+        
+    
+    
+            var circle_marker_114a5ef100b344708a03e1541901d588 = L.circleMarker(
+                [33.752479, 35.590804],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_0fa79f6f5afc4b6aa090f417743bd862 = L.popup({"maxWidth": 500});
+
+        
+            var html_937d6ddf85af497f923cdbf86c7a5f52 = $(`<div id="html_937d6ddf85af497f923cdbf86c7a5f52" style="width: 100.0%; height: 100.0%;">Lebanon - None ¦¦ SOL 4:15 ¦¦ "A fountain of gardens, a well of living waters, and streams from Lebanon."</div>`)[0];
+            popup_0fa79f6f5afc4b6aa090f417743bd862.setContent(html_937d6ddf85af497f923cdbf86c7a5f52);
+        
+
+        circle_marker_114a5ef100b344708a03e1541901d588.bindPopup(popup_0fa79f6f5afc4b6aa090f417743bd862)
+        ;
+
+        
+    
+    
+            var circle_marker_598ce8ef0cdb409c9277ccf8a58179f7 = L.circleMarker(
+                [33.752479, 35.590804],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_6a483ce20dab421185ca305f4cf14225 = L.popup({"maxWidth": 500});
+
+        
+            var html_4d82f9e62dbc4d80b89151fef088978a = $(`<div id="html_4d82f9e62dbc4d80b89151fef088978a" style="width: 100.0%; height: 100.0%;">Lebanon - None ¦¦ SOL 5:15 ¦¦ "His legs [are as] pillars of marble, set upon sockets of fine gold: his countenance [is] as Lebanon, excellent as the cedars."</div>`)[0];
+            popup_6a483ce20dab421185ca305f4cf14225.setContent(html_4d82f9e62dbc4d80b89151fef088978a);
+        
+
+        circle_marker_598ce8ef0cdb409c9277ccf8a58179f7.bindPopup(popup_6a483ce20dab421185ca305f4cf14225)
+        ;
+
+        
+    
+    
+            var circle_marker_346c007ea7114a2da437777ae8fbc4ec = L.circleMarker(
+                [33.752479, 35.590804],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_d88a4cf7666b485092e1e1133f98348e = L.popup({"maxWidth": 500});
+
+        
+            var html_a12e3d2157524f0cbc98dbc77b65e80e = $(`<div id="html_a12e3d2157524f0cbc98dbc77b65e80e" style="width: 100.0%; height: 100.0%;">Lebanon - None ¦¦ SOL 7:4 ¦¦ "Thy neck [is] as a tower of ivory; thine eyes [like] the fishpools in Heshbon, by the gate of Bath-rabbim: thy nose [is] as the tower of Lebanon which looketh toward Damascus."</div>`)[0];
+            popup_d88a4cf7666b485092e1e1133f98348e.setContent(html_a12e3d2157524f0cbc98dbc77b65e80e);
+        
+
+        circle_marker_346c007ea7114a2da437777ae8fbc4ec.bindPopup(popup_d88a4cf7666b485092e1e1133f98348e)
+        ;
+
+        
+    
+    
+            var circle_marker_4bdc7f6405ca43e08e93486af8f415ff = L.circleMarker(
+                [33.41615982, 35.85725618],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_8c56e084adcb4eb58c4120dd9871ee86 = L.popup({"maxWidth": 500});
+
+        
+            var html_fa90b4fa5c204ccab6ed999bbd2d9372 = $(`<div id="html_fa90b4fa5c204ccab6ed999bbd2d9372" style="width: 100.0%; height: 100.0%;">Senir - Mount Hermon ¦¦ SOL 4:8 ¦¦ " Come with me from Lebanon, [my] spouse, with me from Lebanon: look from the top of Amana, from the top of Shenir and Hermon, from the lionsâ€™ dens, from the mountains of the leopards."</div>`)[0];
+            popup_8c56e084adcb4eb58c4120dd9871ee86.setContent(html_fa90b4fa5c204ccab6ed999bbd2d9372);
+        
+
+        circle_marker_4bdc7f6405ca43e08e93486af8f415ff.bindPopup(popup_8c56e084adcb4eb58c4120dd9871ee86)
+        ;
+
+        
+    
+    
+            var circle_marker_ca87163553304ca0a5048ea8bc3c360d = L.circleMarker(
+                [32.639068, 34.945929],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_b11dc984873c487080f3c9a8ba2b49c8 = L.popup({"maxWidth": 500});
+
+        
+            var html_1ff271559fc54e5abb7dfe98ec68a5a3 = $(`<div id="html_1ff271559fc54e5abb7dfe98ec68a5a3" style="width: 100.0%; height: 100.0%;">Sharon 1 - None ¦¦ SOL 2:1 ¦¦ "I [am] the rose of Sharon, [and] the lily of the valleys."</div>`)[0];
+            popup_b11dc984873c487080f3c9a8ba2b49c8.setContent(html_1ff271559fc54e5abb7dfe98ec68a5a3);
+        
+
+        circle_marker_ca87163553304ca0a5048ea8bc3c360d.bindPopup(popup_b11dc984873c487080f3c9a8ba2b49c8)
+        ;
+
+        
+    
+    
+            var circle_marker_fca1b4d1411d402f9e7c7a930d40b6f2 = L.circleMarker(
+                [32.2713687, 35.29430387],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_6e73f055030a4ab794220c8e35ea71dc = L.popup({"maxWidth": 500});
+
+        
+            var html_89b8e13fa16946cd9f3f198e1d1ba597 = $(`<div id="html_89b8e13fa16946cd9f3f198e1d1ba597" style="width: 100.0%; height: 100.0%;">Tirzah - None ¦¦ SOL 6:4 ¦¦ " Thou [art] beautiful, O my love, as Tirzah, comely as Jerusalem, terrible as [an army] with banners."</div>`)[0];
+            popup_6e73f055030a4ab794220c8e35ea71dc.setContent(html_89b8e13fa16946cd9f3f198e1d1ba597);
+        
+
+        circle_marker_fca1b4d1411d402f9e7c7a930d40b6f2.bindPopup(popup_6e73f055030a4ab794220c8e35ea71dc)
+        ;
+
+        
+    
+    
+            var circle_marker_129c9badc6174b6f923a0ef4bd9dcfef = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c71381cada4445d38225fd1286466bb2);
+        
+    
+        var popup_fbe6fe2c229e4434bda69ee7298cd404 = L.popup({"maxWidth": 500});
+
+        
+            var html_bf00346faed9405fa326c7dd4bd5fabe = $(`<div id="html_bf00346faed9405fa326c7dd4bd5fabe" style="width: 100.0%; height: 100.0%;">Zion - Jerusalem ¦¦ SOL 3:11 ¦¦ "Go forth, O ye daughters of Zion, and behold king Solomon with the crown wherewith his mother crowned him in the day of his espousals, and in the day of the gladness of his heart."</div>`)[0];
+            popup_fbe6fe2c229e4434bda69ee7298cd404.setContent(html_bf00346faed9405fa326c7dd4bd5fabe);
+        
+
+        circle_marker_129c9badc6174b6f923a0ef4bd9dcfef.bindPopup(popup_fbe6fe2c229e4434bda69ee7298cd404)
+        ;
+
+        
+    
+    
+            var feature_group_d3772f3cee9f4cf9b20390178396325c = L.featureGroup(
+                {}
+            ).addTo(map_b1ca0bb54bee42f1b15fd5d8e3126cd1);
+        
+    
+            var heat_map_8f4fae7801ee4c5593c56b12974977d8 = L.heatLayer(
+                [[33.68137, 36.055039], [33.41615982, 35.85725618], [31.80052001, 35.80901867], [31.43333152, 35.13333189], [33.519299, 36.31345], [31.46152536, 35.39241108], [32.042522999999996, 35.724241], [32.042522999999996, 35.724241], [33.41615982, 35.85725618], [31.80052001, 35.80901867], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [27.4, 37.7], [33.752479, 35.590804], [33.752479, 35.590804], [33.752479, 35.590804], [33.752479, 35.590804], [33.752479, 35.590804], [33.752479, 35.590804], [33.41615982, 35.85725618], [32.639068, 34.945929], [32.2713687, 35.29430387], [31.777444, 35.234935]],
+                {"blur": 15, "max": 1.0, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
+            ).addTo(feature_group_d3772f3cee9f4cf9b20390178396325c);
+        
+    
+            var layer_control_3e4c5ca88c7a4d8bb3209d83f27e95aa = {
+                base_layers : {
+                    "Mapbox Satellite" : tile_layer_eab3c3d09dd7471ba6c36390c761719c,
+                },
+                overlays :  {
+                    "Verse Locations" : feature_group_c71381cada4445d38225fd1286466bb2,
+                    "Heat Map" : feature_group_d3772f3cee9f4cf9b20390178396325c,
+                },
+            };
+            L.control.layers(
+                layer_control_3e4c5ca88c7a4d8bb3209d83f27e95aa.base_layers,
+                layer_control_3e4c5ca88c7a4d8bb3209d83f27e95aa.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_b1ca0bb54bee42f1b15fd5d8e3126cd1);
+        
+</script>

@@ -1,0 +1,1731 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_23473910e57945b7adb9e603a9aa9623 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+</head>
+<body>    
+    <title>BibleMapApp - John Map</title>
+    
+            <div class="folium-map" id="map_23473910e57945b7adb9e603a9aa9623" ></div>
+        
+</body>
+<script>    
+    
+            var map_23473910e57945b7adb9e603a9aa9623 = L.map(
+                "map_23473910e57945b7adb9e603a9aa9623",
+                {
+                    center: [31.83273947, 35.18016286],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8c81e8af21d24a59864c87fbda622ebb = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/codingeologist/ck9vc6aes0kwo1jn3ei75j6da/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiY29kaW5nZW9sb2dpc3QiLCJhIjoiY2s5dmMyZWp6MGEyNzNmbW9wNGVmcnV2diJ9.hk99FJ_5V5AMkbDHF0Dv5w",
+                {"attribution": "\u003ca href=https://ebible.org/\u003e\u00a9 eBible\u003c/a\u003e | \u003ca href=http://www.openbible.info/\u003e\u00a9 OpenBible\u003c/a\u003e | \u003ca href=https://www.mapbox.com/about/maps/\u003e\u00a9 Mapbox\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 26, "maxZoom": 26, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_23473910e57945b7adb9e603a9aa9623);
+        
+    
+            var feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb = L.featureGroup(
+                {}
+            ).addTo(map_23473910e57945b7adb9e603a9aa9623);
+        
+    
+            var circle_marker_29acc002740144ba93506917caa9bce2 = L.circleMarker(
+                [32.398936, 35.54351],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_32666c1249f44e32a0447d1e033dc21f = L.popup({"maxWidth": 500});
+
+        
+            var html_db14bead345147e7a01fc8b71ebf0655 = $(`<div id="html_db14bead345147e7a01fc8b71ebf0655" style="width: 100.0%; height: 100.0%;">Aenon - None ¦¦ JOH 3:23 ¦¦ " And John also was baptizing in Ã†non near to Salim, because there was much water there: and they came, and were baptized."</div>`)[0];
+            popup_32666c1249f44e32a0447d1e033dc21f.setContent(html_db14bead345147e7a01fc8b71ebf0655);
+        
+
+        circle_marker_29acc002740144ba93506917caa9bce2.bindPopup(popup_32666c1249f44e32a0447d1e033dc21f)
+        ;
+
+        
+    
+    
+            var circle_marker_05e29af55df0457aaadeb7799b776801 = L.circleMarker(
+                [31.83273947, 35.18016286],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_827edcfc8fd9479aada162c1c97d7f25 = L.popup({"maxWidth": 500});
+
+        
+            var html_8e5a80907608477b83cc92325ce4a895 = $(`<div id="html_8e5a80907608477b83cc92325ce4a895" style="width: 100.0%; height: 100.0%;">Arimathea - Mizpah 3 ¦¦ JOH 19:38 ¦¦ " And after this Joseph of Arimathaea, being a disciple of Jesus, but secretly for fear of the Jews, besought Pilate that he might take away the body of Jesus: and Pilate gave [him] leave. He came therefore, and took the body of Jesus."</div>`)[0];
+            popup_827edcfc8fd9479aada162c1c97d7f25.setContent(html_8e5a80907608477b83cc92325ce4a895);
+        
+
+        circle_marker_05e29af55df0457aaadeb7799b776801.bindPopup(popup_827edcfc8fd9479aada162c1c97d7f25)
+        ;
+
+        
+    
+    
+            var circle_marker_91111f0fe49241068915a2d58b2b0999 = L.circleMarker(
+                [31.77166591, 35.26212204],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_bedf83013c5a404a8c9bcd9b229a7cc1 = L.popup({"maxWidth": 500});
+
+        
+            var html_9baab3941af54859b6ee2f534eb15d8f = $(`<div id="html_9baab3941af54859b6ee2f534eb15d8f" style="width: 100.0%; height: 100.0%;">Bethany 1 - None ¦¦ JOH 11:1 ¦¦ "Now a certain [man] was sick, [named] Lazarus, of Bethany, the town of Mary and her sister Martha."</div>`)[0];
+            popup_bedf83013c5a404a8c9bcd9b229a7cc1.setContent(html_9baab3941af54859b6ee2f534eb15d8f);
+        
+
+        circle_marker_91111f0fe49241068915a2d58b2b0999.bindPopup(popup_bedf83013c5a404a8c9bcd9b229a7cc1)
+        ;
+
+        
+    
+    
+            var circle_marker_677407d611094b65991c26f75c511638 = L.circleMarker(
+                [31.77166591, 35.26212204],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_7668a6c4ef074710b5edf81f639e90ae = L.popup({"maxWidth": 500});
+
+        
+            var html_304dd45a0479412896c60689aa00642a = $(`<div id="html_304dd45a0479412896c60689aa00642a" style="width: 100.0%; height: 100.0%;">Bethany 1 - None ¦¦ JOH 11:18 ¦¦ "Now Bethany was nigh unto Jerusalem, about fifteen furlongs off:"</div>`)[0];
+            popup_7668a6c4ef074710b5edf81f639e90ae.setContent(html_304dd45a0479412896c60689aa00642a);
+        
+
+        circle_marker_677407d611094b65991c26f75c511638.bindPopup(popup_7668a6c4ef074710b5edf81f639e90ae)
+        ;
+
+        
+    
+    
+            var circle_marker_1d65244c655c4e85b839c85924689d7c = L.circleMarker(
+                [31.77166591, 35.26212204],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_f9c579dbc64c41e8b6c5e50d1750de79 = L.popup({"maxWidth": 500});
+
+        
+            var html_03fdb1e7d11b4a43a3d7bbe5056072a8 = $(`<div id="html_03fdb1e7d11b4a43a3d7bbe5056072a8" style="width: 100.0%; height: 100.0%;">Bethany 1 - None ¦¦ JOH 12:1 ¦¦ "Then Jesus six days before the passover came to Bethany, where Lazarus was which had been dead, whom he raised from the dead."</div>`)[0];
+            popup_f9c579dbc64c41e8b6c5e50d1750de79.setContent(html_03fdb1e7d11b4a43a3d7bbe5056072a8);
+        
+
+        circle_marker_1d65244c655c4e85b839c85924689d7c.bindPopup(popup_f9c579dbc64c41e8b6c5e50d1750de79)
+        ;
+
+        
+    
+    
+            var circle_marker_ceb7faf62fdb4556b23efc56c6c2c940 = L.circleMarker(
+                [31.83632115, 35.55260017],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_85e1bb4a797346b1ba6f21d3337f9c51 = L.popup({"maxWidth": 500});
+
+        
+            var html_67733422e65c4e38b70cf90a4e64fc0c = $(`<div id="html_67733422e65c4e38b70cf90a4e64fc0c" style="width: 100.0%; height: 100.0%;">Bethany 2 - None ¦¦ JOH 1:28 ¦¦ "These things were done in Bethabara beyond Jordan, where John was baptizing."</div>`)[0];
+            popup_85e1bb4a797346b1ba6f21d3337f9c51.setContent(html_67733422e65c4e38b70cf90a4e64fc0c);
+        
+
+        circle_marker_ceb7faf62fdb4556b23efc56c6c2c940.bindPopup(popup_85e1bb4a797346b1ba6f21d3337f9c51)
+        ;
+
+        
+    
+    
+            var circle_marker_c4a560a323e341c8b0a3604b29cea0cd = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_f3d8653675b84760a292323b54857532 = L.popup({"maxWidth": 500});
+
+        
+            var html_ec9595d07680416f82699a1aba6c7389 = $(`<div id="html_ec9595d07680416f82699a1aba6c7389" style="width: 100.0%; height: 100.0%;">Bethesda - Jerusalem ¦¦ JOH 5:2 ¦¦ "Now there is at Jerusalem by the sheep [market] a pool, which is called in the Hebrew tongue Bethesda, having five porches."</div>`)[0];
+            popup_f3d8653675b84760a292323b54857532.setContent(html_ec9595d07680416f82699a1aba6c7389);
+        
+
+        circle_marker_c4a560a323e341c8b0a3604b29cea0cd.bindPopup(popup_f3d8653675b84760a292323b54857532)
+        ;
+
+        
+    
+    
+            var circle_marker_bb163a9b1c6d419abfe5e60449477faa = L.circleMarker(
+                [32.90784828, 35.62697296],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_7ebc265264c640ada591df36d549c9aa = L.popup({"maxWidth": 500});
+
+        
+            var html_a655b99673c9439aa9bd36e6806b9b26 = $(`<div id="html_a655b99673c9439aa9bd36e6806b9b26" style="width: 100.0%; height: 100.0%;">Bethsaida - None ¦¦ JOH 1:44 ¦¦ "Now Philip was of Bethsaida, the city of Andrew and Peter."</div>`)[0];
+            popup_7ebc265264c640ada591df36d549c9aa.setContent(html_a655b99673c9439aa9bd36e6806b9b26);
+        
+
+        circle_marker_bb163a9b1c6d419abfe5e60449477faa.bindPopup(popup_7ebc265264c640ada591df36d549c9aa)
+        ;
+
+        
+    
+    
+            var circle_marker_2af35720fa814a4cb20f36f906b3de03 = L.circleMarker(
+                [32.90784828, 35.62697296],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_9c3349beb73149ba8313f784b25fb0b6 = L.popup({"maxWidth": 500});
+
+        
+            var html_2cd52f878947442394e259c881c8d6f0 = $(`<div id="html_2cd52f878947442394e259c881c8d6f0" style="width: 100.0%; height: 100.0%;">Bethsaida - None ¦¦ JOH 12:21 ¦¦ "The same came therefore to Philip, which was of Bethsaida of Galilee, and desired him, saying, Sir, we would see Jesus."</div>`)[0];
+            popup_9c3349beb73149ba8313f784b25fb0b6.setContent(html_2cd52f878947442394e259c881c8d6f0);
+        
+
+        circle_marker_2af35720fa814a4cb20f36f906b3de03.bindPopup(popup_9c3349beb73149ba8313f784b25fb0b6)
+        ;
+
+        
+    
+    
+            var circle_marker_386f7a4b619f4751874ce282f490e27a = L.circleMarker(
+                [32.74701518, 35.33877162],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_aa14077866ec40419e7e9678ef57656c = L.popup({"maxWidth": 500});
+
+        
+            var html_643776602d2b4e4fa4d45e9768752c2b = $(`<div id="html_643776602d2b4e4fa4d45e9768752c2b" style="width: 100.0%; height: 100.0%;">Cana - None ¦¦ JOH 2:1 ¦¦ "And the third day there was a marriage in Cana of Galilee; and the mother of Jesus was there:"</div>`)[0];
+            popup_aa14077866ec40419e7e9678ef57656c.setContent(html_643776602d2b4e4fa4d45e9768752c2b);
+        
+
+        circle_marker_386f7a4b619f4751874ce282f490e27a.bindPopup(popup_aa14077866ec40419e7e9678ef57656c)
+        ;
+
+        
+    
+    
+            var circle_marker_f92206e0014a4da2a95792a3fdd3c92a = L.circleMarker(
+                [32.74701518, 35.33877162],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_6d451ce780b94fd1806ecf33ed885ead = L.popup({"maxWidth": 500});
+
+        
+            var html_61d3d1af1de241398b53064ad26814c0 = $(`<div id="html_61d3d1af1de241398b53064ad26814c0" style="width: 100.0%; height: 100.0%;">Cana - None ¦¦ JOH 2:11 ¦¦ "This beginning of miracles did Jesus in Cana of Galilee, and manifested forth his glory; and his disciples believed on him."</div>`)[0];
+            popup_6d451ce780b94fd1806ecf33ed885ead.setContent(html_61d3d1af1de241398b53064ad26814c0);
+        
+
+        circle_marker_f92206e0014a4da2a95792a3fdd3c92a.bindPopup(popup_6d451ce780b94fd1806ecf33ed885ead)
+        ;
+
+        
+    
+    
+            var circle_marker_6a748062e4f34927baf5ac723d1cea01 = L.circleMarker(
+                [32.74701518, 35.33877162],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_76a19b0dc32542c4b8981a51ea102a39 = L.popup({"maxWidth": 500});
+
+        
+            var html_a14e6c321b944c05ae3a7422e382163f = $(`<div id="html_a14e6c321b944c05ae3a7422e382163f" style="width: 100.0%; height: 100.0%;">Cana - None ¦¦ JOH 4:46 ¦¦ "So Jesus came again into Cana of Galilee, where he made the water wine. And there was a certain nobleman, whose son was sick at Capernaum."</div>`)[0];
+            popup_76a19b0dc32542c4b8981a51ea102a39.setContent(html_a14e6c321b944c05ae3a7422e382163f);
+        
+
+        circle_marker_6a748062e4f34927baf5ac723d1cea01.bindPopup(popup_76a19b0dc32542c4b8981a51ea102a39)
+        ;
+
+        
+    
+    
+            var circle_marker_b63f76ada7874f9992f038bab9eccaf5 = L.circleMarker(
+                [32.74701518, 35.33877162],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_e2fce10a1c224055b1bf7798b145b439 = L.popup({"maxWidth": 500});
+
+        
+            var html_5def8fed808046eaa93d54a058861b29 = $(`<div id="html_5def8fed808046eaa93d54a058861b29" style="width: 100.0%; height: 100.0%;">Cana - None ¦¦ JOH 21:2 ¦¦ "There were together Simon Peter, and Thomas called Didymus, and Nathanael of Cana in Galilee, and the [sons] of Zebedee, and two other of his disciples."</div>`)[0];
+            popup_e2fce10a1c224055b1bf7798b145b439.setContent(html_5def8fed808046eaa93d54a058861b29);
+        
+
+        circle_marker_b63f76ada7874f9992f038bab9eccaf5.bindPopup(popup_e2fce10a1c224055b1bf7798b145b439)
+        ;
+
+        
+    
+    
+            var circle_marker_9d05ccaa9bb949bfb4615feb2bea0ae7 = L.circleMarker(
+                [32.88059413, 35.57515767],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_2a9cea67db6e4185a1ae7bf217ead284 = L.popup({"maxWidth": 500});
+
+        
+            var html_856b85db291e435c8a132616bb6222ca = $(`<div id="html_856b85db291e435c8a132616bb6222ca" style="width: 100.0%; height: 100.0%;">Capernaum - None ¦¦ JOH 2:12 ¦¦ " After this he went down to Capernaum, he, and his mother, and his brethren, and his disciples: and they continued there not many days."</div>`)[0];
+            popup_2a9cea67db6e4185a1ae7bf217ead284.setContent(html_856b85db291e435c8a132616bb6222ca);
+        
+
+        circle_marker_9d05ccaa9bb949bfb4615feb2bea0ae7.bindPopup(popup_2a9cea67db6e4185a1ae7bf217ead284)
+        ;
+
+        
+    
+    
+            var circle_marker_dd4c546ebfdb4aa2a6c668ba6e762dcf = L.circleMarker(
+                [32.88059413, 35.57515767],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_a1ae165e598340609e09b3bf8d36b998 = L.popup({"maxWidth": 500});
+
+        
+            var html_263cbd4a08df4fc5b8039fce30586597 = $(`<div id="html_263cbd4a08df4fc5b8039fce30586597" style="width: 100.0%; height: 100.0%;">Capernaum - None ¦¦ JOH 4:46 ¦¦ "So Jesus came again into Cana of Galilee, where he made the water wine. And there was a certain nobleman, whose son was sick at Capernaum."</div>`)[0];
+            popup_a1ae165e598340609e09b3bf8d36b998.setContent(html_263cbd4a08df4fc5b8039fce30586597);
+        
+
+        circle_marker_dd4c546ebfdb4aa2a6c668ba6e762dcf.bindPopup(popup_a1ae165e598340609e09b3bf8d36b998)
+        ;
+
+        
+    
+    
+            var circle_marker_6b8c3565f5724dc8b117ca7294df6bdf = L.circleMarker(
+                [32.88059413, 35.57515767],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_776c85e390804df3b225bb754640229b = L.popup({"maxWidth": 500});
+
+        
+            var html_3b5f3f3b198340e5b5c452e2803bd2b1 = $(`<div id="html_3b5f3f3b198340e5b5c452e2803bd2b1" style="width: 100.0%; height: 100.0%;">Capernaum - None ¦¦ JOH 6:17 ¦¦ "And entered into a ship, and went over the sea toward Capernaum. And it was now dark, and Jesus was not come to them."</div>`)[0];
+            popup_776c85e390804df3b225bb754640229b.setContent(html_3b5f3f3b198340e5b5c452e2803bd2b1);
+        
+
+        circle_marker_6b8c3565f5724dc8b117ca7294df6bdf.bindPopup(popup_776c85e390804df3b225bb754640229b)
+        ;
+
+        
+    
+    
+            var circle_marker_ecefb5c7fcd8483aa43b1578e92b6a47 = L.circleMarker(
+                [32.88059413, 35.57515767],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_03e3543a9a0643ef800e63569d4ffb83 = L.popup({"maxWidth": 500});
+
+        
+            var html_473dcc1cec32404bbc8a359d41270198 = $(`<div id="html_473dcc1cec32404bbc8a359d41270198" style="width: 100.0%; height: 100.0%;">Capernaum - None ¦¦ JOH 6:24 ¦¦ "When the people therefore saw that Jesus was not there, neither his disciples, they also took shipping, and came to Capernaum, seeking for Jesus."</div>`)[0];
+            popup_03e3543a9a0643ef800e63569d4ffb83.setContent(html_473dcc1cec32404bbc8a359d41270198);
+        
+
+        circle_marker_ecefb5c7fcd8483aa43b1578e92b6a47.bindPopup(popup_03e3543a9a0643ef800e63569d4ffb83)
+        ;
+
+        
+    
+    
+            var circle_marker_81a35905074f424099b910b12cccc2bc = L.circleMarker(
+                [32.88059413, 35.57515767],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_13bc1de7e0f0491291523a9fb09039f4 = L.popup({"maxWidth": 500});
+
+        
+            var html_f2d1c1514c3140b5a4c0be4ddbbba2c3 = $(`<div id="html_f2d1c1514c3140b5a4c0be4ddbbba2c3" style="width: 100.0%; height: 100.0%;">Capernaum - None ¦¦ JOH 6:59 ¦¦ "These things said he in the synagogue, as he taught in Capernaum."</div>`)[0];
+            popup_13bc1de7e0f0491291523a9fb09039f4.setContent(html_f2d1c1514c3140b5a4c0be4ddbbba2c3);
+        
+
+        circle_marker_81a35905074f424099b910b12cccc2bc.bindPopup(popup_13bc1de7e0f0491291523a9fb09039f4)
+        ;
+
+        
+    
+    
+            var circle_marker_f678f06782ed435ba49db00394906a50 = L.circleMarker(
+                [31.95378956, 35.29913578],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_9b7c2bb8909546c8a8ab6437b9badfb7 = L.popup({"maxWidth": 500});
+
+        
+            var html_abc5d091a7344253960adb7c22be195b = $(`<div id="html_abc5d091a7344253960adb7c22be195b" style="width: 100.0%; height: 100.0%;">Ephraim - Ophrah 1 ¦¦ JOH 11:54 ¦¦ "Jesus therefore walked no more openly among the Jews; but went thence unto a country near to the wilderness, into a city called Ephraim, and there continued with his disciples."</div>`)[0];
+            popup_9b7c2bb8909546c8a8ab6437b9badfb7.setContent(html_abc5d091a7344253960adb7c22be195b);
+        
+
+        circle_marker_f678f06782ed435ba49db00394906a50.bindPopup(popup_9b7c2bb8909546c8a8ab6437b9badfb7)
+        ;
+
+        
+    
+    
+            var circle_marker_f3eaca34f0924eae8f070298e4d3bfcb = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_3cf0c6bac0694743b6ee2896c12f82ee = L.popup({"maxWidth": 500});
+
+        
+            var html_37ebc4369bb240f08b22f27733415a3a = $(`<div id="html_37ebc4369bb240f08b22f27733415a3a" style="width: 100.0%; height: 100.0%;">Gabbatha - Jerusalem ¦¦ JOH 19:13 ¦¦ " When Pilate therefore heard that saying, he brought Jesus forth, and sat down in the judgment seat in a place that is called the Pavement, but in the Hebrew, Gabbatha."</div>`)[0];
+            popup_3cf0c6bac0694743b6ee2896c12f82ee.setContent(html_37ebc4369bb240f08b22f27733415a3a);
+        
+
+        circle_marker_f3eaca34f0924eae8f070298e4d3bfcb.bindPopup(popup_3cf0c6bac0694743b6ee2896c12f82ee)
+        ;
+
+        
+    
+    
+            var circle_marker_119a6e1d2b094a0d8cf3e658d04cbc34 = L.circleMarker(
+                [32.70674542, 35.30152808],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_af1b2453dc44480886f79c00af84fb83 = L.popup({"maxWidth": 500});
+
+        
+            var html_a8c260a8354546028c894b7e67dae01d = $(`<div id="html_a8c260a8354546028c894b7e67dae01d" style="width: 100.0%; height: 100.0%;">GALilee - Nazareth ¦¦ JOH 1:43 ¦¦ " The day following Jesus would go forth into Galilee, and findeth Philip, and saith unto him, Follow me."</div>`)[0];
+            popup_af1b2453dc44480886f79c00af84fb83.setContent(html_a8c260a8354546028c894b7e67dae01d);
+        
+
+        circle_marker_119a6e1d2b094a0d8cf3e658d04cbc34.bindPopup(popup_af1b2453dc44480886f79c00af84fb83)
+        ;
+
+        
+    
+    
+            var circle_marker_99ec82303dee41e1bef23bf4c1db5978 = L.circleMarker(
+                [32.70674542, 35.30152808],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_825bb57afaa74802af78911bfed7b4fe = L.popup({"maxWidth": 500});
+
+        
+            var html_c07272804208420394cf2476fd61e2ee = $(`<div id="html_c07272804208420394cf2476fd61e2ee" style="width: 100.0%; height: 100.0%;">GALilee - Nazareth ¦¦ JOH 2:1 ¦¦ "And the third day there was a marriage in Cana of Galilee; and the mother of Jesus was there:"</div>`)[0];
+            popup_825bb57afaa74802af78911bfed7b4fe.setContent(html_c07272804208420394cf2476fd61e2ee);
+        
+
+        circle_marker_99ec82303dee41e1bef23bf4c1db5978.bindPopup(popup_825bb57afaa74802af78911bfed7b4fe)
+        ;
+
+        
+    
+    
+            var circle_marker_fcee693723de4d7d8907e377632c7d51 = L.circleMarker(
+                [32.70674542, 35.30152808],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_8aa52a8561ad4a808fda14dd7d8a8e23 = L.popup({"maxWidth": 500});
+
+        
+            var html_b5aceb35f11d4fa5b48929b0f19dc4f1 = $(`<div id="html_b5aceb35f11d4fa5b48929b0f19dc4f1" style="width: 100.0%; height: 100.0%;">GALilee - Nazareth ¦¦ JOH 2:11 ¦¦ "This beginning of miracles did Jesus in Cana of Galilee, and manifested forth his glory; and his disciples believed on him."</div>`)[0];
+            popup_8aa52a8561ad4a808fda14dd7d8a8e23.setContent(html_b5aceb35f11d4fa5b48929b0f19dc4f1);
+        
+
+        circle_marker_fcee693723de4d7d8907e377632c7d51.bindPopup(popup_8aa52a8561ad4a808fda14dd7d8a8e23)
+        ;
+
+        
+    
+    
+            var circle_marker_0bfa806652f84f9b858cca4033c0a0b2 = L.circleMarker(
+                [32.70674542, 35.30152808],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_9aa2eb3284454cce93d9b200797c812a = L.popup({"maxWidth": 500});
+
+        
+            var html_4db1c41cd1b54bf483f45596383646a9 = $(`<div id="html_4db1c41cd1b54bf483f45596383646a9" style="width: 100.0%; height: 100.0%;">GALilee - Nazareth ¦¦ JOH 4:3 ¦¦ "He left JudÃ¦a, and departed again into Galilee."</div>`)[0];
+            popup_9aa2eb3284454cce93d9b200797c812a.setContent(html_4db1c41cd1b54bf483f45596383646a9);
+        
+
+        circle_marker_0bfa806652f84f9b858cca4033c0a0b2.bindPopup(popup_9aa2eb3284454cce93d9b200797c812a)
+        ;
+
+        
+    
+    
+            var circle_marker_eee61856f57e4fc9bd151835d15abab2 = L.circleMarker(
+                [32.70674542, 35.30152808],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_f66d13c9598e4680930eea1a9302e4ba = L.popup({"maxWidth": 500});
+
+        
+            var html_f5fee9e24a8c45ebb85e672a81070dd6 = $(`<div id="html_f5fee9e24a8c45ebb85e672a81070dd6" style="width: 100.0%; height: 100.0%;">GALilee - Nazareth ¦¦ JOH 4:43 ¦¦ " Now after two days he departed thence, and went into Galilee."</div>`)[0];
+            popup_f66d13c9598e4680930eea1a9302e4ba.setContent(html_f5fee9e24a8c45ebb85e672a81070dd6);
+        
+
+        circle_marker_eee61856f57e4fc9bd151835d15abab2.bindPopup(popup_f66d13c9598e4680930eea1a9302e4ba)
+        ;
+
+        
+    
+    
+            var circle_marker_9611d51701124ec08045b5dca3648e98 = L.circleMarker(
+                [32.70674542, 35.30152808],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_ceaf6ef8f62a4b1ba079f4d668b13e41 = L.popup({"maxWidth": 500});
+
+        
+            var html_92afe4f1e3344d51bb874e78937d8cde = $(`<div id="html_92afe4f1e3344d51bb874e78937d8cde" style="width: 100.0%; height: 100.0%;">GALilee - Nazareth ¦¦ JOH 4:45 ¦¦ "Then when he was come into Galilee, the GalilÃ¦ans received him, having seen all the things that he did at Jerusalem at the feast: for they also went unto the feast."</div>`)[0];
+            popup_ceaf6ef8f62a4b1ba079f4d668b13e41.setContent(html_92afe4f1e3344d51bb874e78937d8cde);
+        
+
+        circle_marker_9611d51701124ec08045b5dca3648e98.bindPopup(popup_ceaf6ef8f62a4b1ba079f4d668b13e41)
+        ;
+
+        
+    
+    
+            var circle_marker_9748c19210a64f268080dccb07350490 = L.circleMarker(
+                [32.70674542, 35.30152808],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_0702dc7f04e949bd96bb525559572639 = L.popup({"maxWidth": 500});
+
+        
+            var html_8aad624250b3425d85911d56a0bcae88 = $(`<div id="html_8aad624250b3425d85911d56a0bcae88" style="width: 100.0%; height: 100.0%;">GALilee - Nazareth ¦¦ JOH 4:46 ¦¦ "So Jesus came again into Cana of Galilee, where he made the water wine. And there was a certain nobleman, whose son was sick at Capernaum."</div>`)[0];
+            popup_0702dc7f04e949bd96bb525559572639.setContent(html_8aad624250b3425d85911d56a0bcae88);
+        
+
+        circle_marker_9748c19210a64f268080dccb07350490.bindPopup(popup_0702dc7f04e949bd96bb525559572639)
+        ;
+
+        
+    
+    
+            var circle_marker_2259f4972c9f4eacb1180820ca77e117 = L.circleMarker(
+                [32.70674542, 35.30152808],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_df46b114ef8f493d8e41c87c54f9fd9f = L.popup({"maxWidth": 500});
+
+        
+            var html_e4953534506a4c4892ec33db4bb7d039 = $(`<div id="html_e4953534506a4c4892ec33db4bb7d039" style="width: 100.0%; height: 100.0%;">GALilee - Nazareth ¦¦ JOH 4:47 ¦¦ "When he heard that Jesus was come out of JudÃ¦a into Galilee, he went unto him, and besought him that he would come down, and heal his son: for he was at the point of death."</div>`)[0];
+            popup_df46b114ef8f493d8e41c87c54f9fd9f.setContent(html_e4953534506a4c4892ec33db4bb7d039);
+        
+
+        circle_marker_2259f4972c9f4eacb1180820ca77e117.bindPopup(popup_df46b114ef8f493d8e41c87c54f9fd9f)
+        ;
+
+        
+    
+    
+            var circle_marker_4611a3f6aa48492db96ccd80d8f02f22 = L.circleMarker(
+                [32.70674542, 35.30152808],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_bcbdb355d9c148cd849b60c122549f3f = L.popup({"maxWidth": 500});
+
+        
+            var html_c3a987297ebd46d6b38f8782a79c91d9 = $(`<div id="html_c3a987297ebd46d6b38f8782a79c91d9" style="width: 100.0%; height: 100.0%;">GALilee - Nazareth ¦¦ JOH 4:54 ¦¦ "This [is] again the second miracle [that] Jesus did, when he was come out of JudÃ¦a into Galilee."</div>`)[0];
+            popup_bcbdb355d9c148cd849b60c122549f3f.setContent(html_c3a987297ebd46d6b38f8782a79c91d9);
+        
+
+        circle_marker_4611a3f6aa48492db96ccd80d8f02f22.bindPopup(popup_bcbdb355d9c148cd849b60c122549f3f)
+        ;
+
+        
+    
+    
+            var circle_marker_0c5084f6859840c3b91a2a5f24d47ce5 = L.circleMarker(
+                [32.70674542, 35.30152808],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_791eb8f3de9546848fce2d36916fc736 = L.popup({"maxWidth": 500});
+
+        
+            var html_ed5ddd257ae34e48a6d98e020c25ae41 = $(`<div id="html_ed5ddd257ae34e48a6d98e020c25ae41" style="width: 100.0%; height: 100.0%;">GALilee - Nazareth ¦¦ JOH 7:1 ¦¦ "After these things Jesus walked in Galilee: for he would not walk in Jewry, because the Jews sought to kill him."</div>`)[0];
+            popup_791eb8f3de9546848fce2d36916fc736.setContent(html_ed5ddd257ae34e48a6d98e020c25ae41);
+        
+
+        circle_marker_0c5084f6859840c3b91a2a5f24d47ce5.bindPopup(popup_791eb8f3de9546848fce2d36916fc736)
+        ;
+
+        
+    
+    
+            var circle_marker_aeb44deedfdc468e925200e36f8b2d6f = L.circleMarker(
+                [32.70674542, 35.30152808],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_3c42833537144e4da2942184d5e3f03b = L.popup({"maxWidth": 500});
+
+        
+            var html_75d5475325934d2ab03f90153477e965 = $(`<div id="html_75d5475325934d2ab03f90153477e965" style="width: 100.0%; height: 100.0%;">GALilee - Nazareth ¦¦ JOH 7:9 ¦¦ "When he had said these words unto them, he abode [still] in Galilee."</div>`)[0];
+            popup_3c42833537144e4da2942184d5e3f03b.setContent(html_75d5475325934d2ab03f90153477e965);
+        
+
+        circle_marker_aeb44deedfdc468e925200e36f8b2d6f.bindPopup(popup_3c42833537144e4da2942184d5e3f03b)
+        ;
+
+        
+    
+    
+            var circle_marker_05692890cc9b4aaa9710438cd99bd40d = L.circleMarker(
+                [32.70674542, 35.30152808],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_ccaadd0b76b04ffbb870d38b8ef0cf4a = L.popup({"maxWidth": 500});
+
+        
+            var html_656789fc90404731a22ffb36a2f3c1e7 = $(`<div id="html_656789fc90404731a22ffb36a2f3c1e7" style="width: 100.0%; height: 100.0%;">GALilee - Nazareth ¦¦ JOH 7:41 ¦¦ "Others said, This is the Christ. But some said, Shall Christ come out of Galilee?"</div>`)[0];
+            popup_ccaadd0b76b04ffbb870d38b8ef0cf4a.setContent(html_656789fc90404731a22ffb36a2f3c1e7);
+        
+
+        circle_marker_05692890cc9b4aaa9710438cd99bd40d.bindPopup(popup_ccaadd0b76b04ffbb870d38b8ef0cf4a)
+        ;
+
+        
+    
+    
+            var circle_marker_8c8fc21c495e4029aaac76ea72455f19 = L.circleMarker(
+                [32.70674542, 35.30152808],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_bf73de6b356b405fa9020dea37dce756 = L.popup({"maxWidth": 500});
+
+        
+            var html_5cd4dcbbb52149519e6f72dce6c4fc32 = $(`<div id="html_5cd4dcbbb52149519e6f72dce6c4fc32" style="width: 100.0%; height: 100.0%;">GALilee - Nazareth ¦¦ JOH 7:52 ¦¦ "They answered and said unto him, Art thou also of Galilee? Search, and look: for out of Galilee ariseth no prophet."</div>`)[0];
+            popup_bf73de6b356b405fa9020dea37dce756.setContent(html_5cd4dcbbb52149519e6f72dce6c4fc32);
+        
+
+        circle_marker_8c8fc21c495e4029aaac76ea72455f19.bindPopup(popup_bf73de6b356b405fa9020dea37dce756)
+        ;
+
+        
+    
+    
+            var circle_marker_06a85b2d49d74a088685f761a092497c = L.circleMarker(
+                [32.70674542, 35.30152808],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_01b58df203a940e29c443e5465e1f12f = L.popup({"maxWidth": 500});
+
+        
+            var html_508bd142038841b2a10d1d5865b1e74c = $(`<div id="html_508bd142038841b2a10d1d5865b1e74c" style="width: 100.0%; height: 100.0%;">GALilee - Nazareth ¦¦ JOH 12:21 ¦¦ "The same came therefore to Philip, which was of Bethsaida of Galilee, and desired him, saying, Sir, we would see Jesus."</div>`)[0];
+            popup_01b58df203a940e29c443e5465e1f12f.setContent(html_508bd142038841b2a10d1d5865b1e74c);
+        
+
+        circle_marker_06a85b2d49d74a088685f761a092497c.bindPopup(popup_01b58df203a940e29c443e5465e1f12f)
+        ;
+
+        
+    
+    
+            var circle_marker_f956a51c76884e74b4c3ef246e133aa1 = L.circleMarker(
+                [32.70674542, 35.30152808],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_2dbf76f6de1c4bd2bd2bf6279083ed81 = L.popup({"maxWidth": 500});
+
+        
+            var html_dafffc8e3f134635bbc70a37ab08d2b5 = $(`<div id="html_dafffc8e3f134635bbc70a37ab08d2b5" style="width: 100.0%; height: 100.0%;">GALilee - Nazareth ¦¦ JOH 21:2 ¦¦ "There were together Simon Peter, and Thomas called Didymus, and Nathanael of Cana in Galilee, and the [sons] of Zebedee, and two other of his disciples."</div>`)[0];
+            popup_2dbf76f6de1c4bd2bd2bf6279083ed81.setContent(html_dafffc8e3f134635bbc70a37ab08d2b5);
+        
+
+        circle_marker_f956a51c76884e74b4c3ef246e133aa1.bindPopup(popup_2dbf76f6de1c4bd2bd2bf6279083ed81)
+        ;
+
+        
+    
+    
+            var circle_marker_65e035a38a0f44d98f2a5296c9e7393e = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_f061585e758744b9a7b457e012827a31 = L.popup({"maxWidth": 500});
+
+        
+            var html_837a752ace8f4431b7e93f0a808b8750 = $(`<div id="html_837a752ace8f4431b7e93f0a808b8750" style="width: 100.0%; height: 100.0%;">Golgotha - Jerusalem ¦¦ JOH 19:17 ¦¦ "And he bearing his cross went forth into a place called [the place] of a skull, which is called in the Hebrew Golgotha:"</div>`)[0];
+            popup_f061585e758744b9a7b457e012827a31.setContent(html_837a752ace8f4431b7e93f0a808b8750);
+        
+
+        circle_marker_65e035a38a0f44d98f2a5296c9e7393e.bindPopup(popup_f061585e758744b9a7b457e012827a31)
+        ;
+
+        
+    
+    
+            var circle_marker_c73451a5e85849a1b7d788fef632dd20 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_008943ba6aae4e30b3e5336c6571322c = L.popup({"maxWidth": 500});
+
+        
+            var html_c12030dad8a04842b058e02603e95cb1 = $(`<div id="html_c12030dad8a04842b058e02603e95cb1" style="width: 100.0%; height: 100.0%;">Jerusalem - None ¦¦ JOH 1:19 ¦¦ " And this is the record of John, when the Jews sent priests and Levites from Jerusalem to ask him, Who art thou?"</div>`)[0];
+            popup_008943ba6aae4e30b3e5336c6571322c.setContent(html_c12030dad8a04842b058e02603e95cb1);
+        
+
+        circle_marker_c73451a5e85849a1b7d788fef632dd20.bindPopup(popup_008943ba6aae4e30b3e5336c6571322c)
+        ;
+
+        
+    
+    
+            var circle_marker_080cf7b0dcc5444b87062ae6d722dd95 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_c468d19849494fa19b7fa9a8b190ba27 = L.popup({"maxWidth": 500});
+
+        
+            var html_dac86ffbc75a4fcc82441e21926fcb89 = $(`<div id="html_dac86ffbc75a4fcc82441e21926fcb89" style="width: 100.0%; height: 100.0%;">Jerusalem - None ¦¦ JOH 2:13 ¦¦ " And the Jewsâ€™ passover was at hand, and Jesus went up to Jerusalem,"</div>`)[0];
+            popup_c468d19849494fa19b7fa9a8b190ba27.setContent(html_dac86ffbc75a4fcc82441e21926fcb89);
+        
+
+        circle_marker_080cf7b0dcc5444b87062ae6d722dd95.bindPopup(popup_c468d19849494fa19b7fa9a8b190ba27)
+        ;
+
+        
+    
+    
+            var circle_marker_16bb0b1d1e8a4273bab455ab5cf3de05 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_28b44dd3b59643e5a0d0379b518ff25c = L.popup({"maxWidth": 500});
+
+        
+            var html_65cb74b31a4e458bae8a629ab307a3b2 = $(`<div id="html_65cb74b31a4e458bae8a629ab307a3b2" style="width: 100.0%; height: 100.0%;">Jerusalem - None ¦¦ JOH 2:23 ¦¦ " Now when he was in Jerusalem at the passover, in the feast [day], many believed in his name, when they saw the miracles which he did."</div>`)[0];
+            popup_28b44dd3b59643e5a0d0379b518ff25c.setContent(html_65cb74b31a4e458bae8a629ab307a3b2);
+        
+
+        circle_marker_16bb0b1d1e8a4273bab455ab5cf3de05.bindPopup(popup_28b44dd3b59643e5a0d0379b518ff25c)
+        ;
+
+        
+    
+    
+            var circle_marker_ffc79c0d9d6e4fb689e0f26518a6cae1 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_ca79c5f9c87e439eba29e999cfe6dab4 = L.popup({"maxWidth": 500});
+
+        
+            var html_1460600a3a7346ccb6a255333fbc66ea = $(`<div id="html_1460600a3a7346ccb6a255333fbc66ea" style="width: 100.0%; height: 100.0%;">Jerusalem - None ¦¦ JOH 4:20 ¦¦ "Our fathers worshipped in this mountain; and ye say, that in Jerusalem is the place where men ought to worship."</div>`)[0];
+            popup_ca79c5f9c87e439eba29e999cfe6dab4.setContent(html_1460600a3a7346ccb6a255333fbc66ea);
+        
+
+        circle_marker_ffc79c0d9d6e4fb689e0f26518a6cae1.bindPopup(popup_ca79c5f9c87e439eba29e999cfe6dab4)
+        ;
+
+        
+    
+    
+            var circle_marker_6284b8ebbab44624bd845725dbe33861 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_3693586d2a2343ac939c58b006c9f88b = L.popup({"maxWidth": 500});
+
+        
+            var html_4221c94aa3ca4b46a087a39b6fdd8d7c = $(`<div id="html_4221c94aa3ca4b46a087a39b6fdd8d7c" style="width: 100.0%; height: 100.0%;">Jerusalem - None ¦¦ JOH 4:21 ¦¦ "Jesus saith unto her, Woman, believe me, the hour cometh, when ye shall neither in this mountain, nor yet at Jerusalem, worship the Father."</div>`)[0];
+            popup_3693586d2a2343ac939c58b006c9f88b.setContent(html_4221c94aa3ca4b46a087a39b6fdd8d7c);
+        
+
+        circle_marker_6284b8ebbab44624bd845725dbe33861.bindPopup(popup_3693586d2a2343ac939c58b006c9f88b)
+        ;
+
+        
+    
+    
+            var circle_marker_30e0ad9f7f72461c9495aa17508067a9 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_6261dbbe1220485fa68178d7ff5a0783 = L.popup({"maxWidth": 500});
+
+        
+            var html_2bf48b26a10840b489bff578ee1e5c47 = $(`<div id="html_2bf48b26a10840b489bff578ee1e5c47" style="width: 100.0%; height: 100.0%;">Jerusalem - None ¦¦ JOH 4:45 ¦¦ "Then when he was come into Galilee, the GalilÃ¦ans received him, having seen all the things that he did at Jerusalem at the feast: for they also went unto the feast."</div>`)[0];
+            popup_6261dbbe1220485fa68178d7ff5a0783.setContent(html_2bf48b26a10840b489bff578ee1e5c47);
+        
+
+        circle_marker_30e0ad9f7f72461c9495aa17508067a9.bindPopup(popup_6261dbbe1220485fa68178d7ff5a0783)
+        ;
+
+        
+    
+    
+            var circle_marker_80382ad9c64b41369f73ec31857af631 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_d7ae81e072ba46748fa61c1d2fe05737 = L.popup({"maxWidth": 500});
+
+        
+            var html_0acb5a56841e43b8b08c4e6cbe97755f = $(`<div id="html_0acb5a56841e43b8b08c4e6cbe97755f" style="width: 100.0%; height: 100.0%;">Jerusalem - None ¦¦ JOH 5:1 ¦¦ "After this there was a feast of the Jews; and Jesus went up to Jerusalem."</div>`)[0];
+            popup_d7ae81e072ba46748fa61c1d2fe05737.setContent(html_0acb5a56841e43b8b08c4e6cbe97755f);
+        
+
+        circle_marker_80382ad9c64b41369f73ec31857af631.bindPopup(popup_d7ae81e072ba46748fa61c1d2fe05737)
+        ;
+
+        
+    
+    
+            var circle_marker_f27caef2dc8a43a4893e190ed42f9392 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_82d0a790fb4a4919b7b0a33587a6c01f = L.popup({"maxWidth": 500});
+
+        
+            var html_d15a175c80954a94ae450ba255b9169d = $(`<div id="html_d15a175c80954a94ae450ba255b9169d" style="width: 100.0%; height: 100.0%;">Jerusalem - None ¦¦ JOH 5:2 ¦¦ "Now there is at Jerusalem by the sheep [market] a pool, which is called in the Hebrew tongue Bethesda, having five porches."</div>`)[0];
+            popup_82d0a790fb4a4919b7b0a33587a6c01f.setContent(html_d15a175c80954a94ae450ba255b9169d);
+        
+
+        circle_marker_f27caef2dc8a43a4893e190ed42f9392.bindPopup(popup_82d0a790fb4a4919b7b0a33587a6c01f)
+        ;
+
+        
+    
+    
+            var circle_marker_d2a782ef6ac04555a60b955b00c765e3 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_ba676d06f7ba4a57b1d1786277a6b16f = L.popup({"maxWidth": 500});
+
+        
+            var html_53676a41a99b40bcb2b4587995c81ee2 = $(`<div id="html_53676a41a99b40bcb2b4587995c81ee2" style="width: 100.0%; height: 100.0%;">Jerusalem - None ¦¦ JOH 7:25 ¦¦ "Then said some of them of Jerusalem, Is not this he, whom they seek to kill?"</div>`)[0];
+            popup_ba676d06f7ba4a57b1d1786277a6b16f.setContent(html_53676a41a99b40bcb2b4587995c81ee2);
+        
+
+        circle_marker_d2a782ef6ac04555a60b955b00c765e3.bindPopup(popup_ba676d06f7ba4a57b1d1786277a6b16f)
+        ;
+
+        
+    
+    
+            var circle_marker_6f1011e10fff401e9537c0effbd3c43a = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_6075556bad6348f7b07e968fee60920f = L.popup({"maxWidth": 500});
+
+        
+            var html_7d19cd9c4cf84f519f58b2b9ecd572a6 = $(`<div id="html_7d19cd9c4cf84f519f58b2b9ecd572a6" style="width: 100.0%; height: 100.0%;">Jerusalem - None ¦¦ JOH 10:22 ¦¦ " And it was at Jerusalem the feast of the dedication, and it was winter."</div>`)[0];
+            popup_6075556bad6348f7b07e968fee60920f.setContent(html_7d19cd9c4cf84f519f58b2b9ecd572a6);
+        
+
+        circle_marker_6f1011e10fff401e9537c0effbd3c43a.bindPopup(popup_6075556bad6348f7b07e968fee60920f)
+        ;
+
+        
+    
+    
+            var circle_marker_d9d5e36d4b794db7b6f9c5de7662d83c = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_9626ff1400d644a8b2fdc2c8807300a1 = L.popup({"maxWidth": 500});
+
+        
+            var html_b34ea676983e4900a7d4bec7726fa608 = $(`<div id="html_b34ea676983e4900a7d4bec7726fa608" style="width: 100.0%; height: 100.0%;">Jerusalem - None ¦¦ JOH 11:18 ¦¦ "Now Bethany was nigh unto Jerusalem, about fifteen furlongs off:"</div>`)[0];
+            popup_9626ff1400d644a8b2fdc2c8807300a1.setContent(html_b34ea676983e4900a7d4bec7726fa608);
+        
+
+        circle_marker_d9d5e36d4b794db7b6f9c5de7662d83c.bindPopup(popup_9626ff1400d644a8b2fdc2c8807300a1)
+        ;
+
+        
+    
+    
+            var circle_marker_dd23e15f29944bdb8bffbb70fbda2d35 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_268387215aac42d09e1b1493be8f4ce1 = L.popup({"maxWidth": 500});
+
+        
+            var html_4aaf664e3cf44fbc82cc01d11d8fb229 = $(`<div id="html_4aaf664e3cf44fbc82cc01d11d8fb229" style="width: 100.0%; height: 100.0%;">Jerusalem - None ¦¦ JOH 11:55 ¦¦ " And the Jewsâ€™ passover was nigh at hand: and many went out of the country up to Jerusalem before the passover, to purify themselves."</div>`)[0];
+            popup_268387215aac42d09e1b1493be8f4ce1.setContent(html_4aaf664e3cf44fbc82cc01d11d8fb229);
+        
+
+        circle_marker_dd23e15f29944bdb8bffbb70fbda2d35.bindPopup(popup_268387215aac42d09e1b1493be8f4ce1)
+        ;
+
+        
+    
+    
+            var circle_marker_131a16a471be4d719a2e186b1f95562c = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_17e94ed93c874a94afeb34235c2ee8bd = L.popup({"maxWidth": 500});
+
+        
+            var html_813e87b6c125453c82f0f06c99b459ff = $(`<div id="html_813e87b6c125453c82f0f06c99b459ff" style="width: 100.0%; height: 100.0%;">Jerusalem - None ¦¦ JOH 12:12 ¦¦ " On the next day much people that were come to the feast, when they heard that Jesus was coming to Jerusalem,"</div>`)[0];
+            popup_17e94ed93c874a94afeb34235c2ee8bd.setContent(html_813e87b6c125453c82f0f06c99b459ff);
+        
+
+        circle_marker_131a16a471be4d719a2e186b1f95562c.bindPopup(popup_17e94ed93c874a94afeb34235c2ee8bd)
+        ;
+
+        
+    
+    
+            var circle_marker_4b9ae28ed9184da1b87c3017a5edee19 = L.circleMarker(
+                [32.309098999999996, 35.5599],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_60686364b5f34220baccfcfc7b0ef9fc = L.popup({"maxWidth": 500});
+
+        
+            var html_3641c8cc456c4efd9a144701ccf12cc1 = $(`<div id="html_3641c8cc456c4efd9a144701ccf12cc1" style="width: 100.0%; height: 100.0%;">Jordan Valley - None ¦¦ JOH 1:28 ¦¦ "These things were done in Bethabara beyond Jordan, where John was baptizing."</div>`)[0];
+            popup_60686364b5f34220baccfcfc7b0ef9fc.setContent(html_3641c8cc456c4efd9a144701ccf12cc1);
+        
+
+        circle_marker_4b9ae28ed9184da1b87c3017a5edee19.bindPopup(popup_60686364b5f34220baccfcfc7b0ef9fc)
+        ;
+
+        
+    
+    
+            var circle_marker_cb5bfbf933f74153a77d106361fb2f7a = L.circleMarker(
+                [32.309098999999996, 35.5599],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_9fe45f2e90a946108b781592bc75acd3 = L.popup({"maxWidth": 500});
+
+        
+            var html_a3c571b3342642ebab9defdead8f46dd = $(`<div id="html_a3c571b3342642ebab9defdead8f46dd" style="width: 100.0%; height: 100.0%;">Jordan Valley - None ¦¦ JOH 3:26 ¦¦ "And they came unto John, and said unto him, Rabbi, he that was with thee beyond Jordan, to whom thou barest witness, behold, the same baptizeth, and all [men] come to him."</div>`)[0];
+            popup_9fe45f2e90a946108b781592bc75acd3.setContent(html_a3c571b3342642ebab9defdead8f46dd);
+        
+
+        circle_marker_cb5bfbf933f74153a77d106361fb2f7a.bindPopup(popup_9fe45f2e90a946108b781592bc75acd3)
+        ;
+
+        
+    
+    
+            var circle_marker_4102ce765bc147cf856f9a9dfac06c9f = L.circleMarker(
+                [32.309098999999996, 35.5599],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_4fbafe0324584e3283dfd80c52d3f4a1 = L.popup({"maxWidth": 500});
+
+        
+            var html_750f16af9c7b49deb11e739a0cd789ae = $(`<div id="html_750f16af9c7b49deb11e739a0cd789ae" style="width: 100.0%; height: 100.0%;">Jordan Valley - None ¦¦ JOH 10:40 ¦¦ "And went away again beyond Jordan into the place where John at first baptized; and there he abode."</div>`)[0];
+            popup_4fbafe0324584e3283dfd80c52d3f4a1.setContent(html_750f16af9c7b49deb11e739a0cd789ae);
+        
+
+        circle_marker_4102ce765bc147cf856f9a9dfac06c9f.bindPopup(popup_4fbafe0324584e3283dfd80c52d3f4a1)
+        ;
+
+        
+    
+    
+            var circle_marker_e00fc24e91a642d0bb63f3b81a7b4c15 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_cf01c1dee1dc4ffca0595bd3376144a7 = L.popup({"maxWidth": 500});
+
+        
+            var html_b1364c4d5b3a4924ba8e1d053574f4af = $(`<div id="html_b1364c4d5b3a4924ba8e1d053574f4af" style="width: 100.0%; height: 100.0%;">Judea - Jerusalem ¦¦ JOH 4:3 ¦¦ "He left JudÃ¦a, and departed again into Galilee."</div>`)[0];
+            popup_cf01c1dee1dc4ffca0595bd3376144a7.setContent(html_b1364c4d5b3a4924ba8e1d053574f4af);
+        
+
+        circle_marker_e00fc24e91a642d0bb63f3b81a7b4c15.bindPopup(popup_cf01c1dee1dc4ffca0595bd3376144a7)
+        ;
+
+        
+    
+    
+            var circle_marker_57aac138e3bc44f987e02b5ee0c8b289 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_a07e7ba317184acaacc83edc9b44f07c = L.popup({"maxWidth": 500});
+
+        
+            var html_1727d6fcc28a454b95bcfde2619e434f = $(`<div id="html_1727d6fcc28a454b95bcfde2619e434f" style="width: 100.0%; height: 100.0%;">Judea - Jerusalem ¦¦ JOH 4:47 ¦¦ "When he heard that Jesus was come out of JudÃ¦a into Galilee, he went unto him, and besought him that he would come down, and heal his son: for he was at the point of death."</div>`)[0];
+            popup_a07e7ba317184acaacc83edc9b44f07c.setContent(html_1727d6fcc28a454b95bcfde2619e434f);
+        
+
+        circle_marker_57aac138e3bc44f987e02b5ee0c8b289.bindPopup(popup_a07e7ba317184acaacc83edc9b44f07c)
+        ;
+
+        
+    
+    
+            var circle_marker_3e81973e10c8497a8b771ba4beac6189 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_a8b68c5f50e8412493d46010e21c5889 = L.popup({"maxWidth": 500});
+
+        
+            var html_a281fad6542f477ea8ff765eecfbd32e = $(`<div id="html_a281fad6542f477ea8ff765eecfbd32e" style="width: 100.0%; height: 100.0%;">Judea - Jerusalem ¦¦ JOH 4:54 ¦¦ "This [is] again the second miracle [that] Jesus did, when he was come out of JudÃ¦a into Galilee."</div>`)[0];
+            popup_a8b68c5f50e8412493d46010e21c5889.setContent(html_a281fad6542f477ea8ff765eecfbd32e);
+        
+
+        circle_marker_3e81973e10c8497a8b771ba4beac6189.bindPopup(popup_a8b68c5f50e8412493d46010e21c5889)
+        ;
+
+        
+    
+    
+            var circle_marker_35fb31029b67433ea474ff31b2cfcfda = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_c779e16ed85a433d8e65a636352e23aa = L.popup({"maxWidth": 500});
+
+        
+            var html_b9ce9556d8204f60ad93b52d03f00f85 = $(`<div id="html_b9ce9556d8204f60ad93b52d03f00f85" style="width: 100.0%; height: 100.0%;">Judea - Jerusalem ¦¦ JOH 7:1 ¦¦ "After these things Jesus walked in Galilee: for he would not walk in Jewry, because the Jews sought to kill him."</div>`)[0];
+            popup_c779e16ed85a433d8e65a636352e23aa.setContent(html_b9ce9556d8204f60ad93b52d03f00f85);
+        
+
+        circle_marker_35fb31029b67433ea474ff31b2cfcfda.bindPopup(popup_c779e16ed85a433d8e65a636352e23aa)
+        ;
+
+        
+    
+    
+            var circle_marker_28235929bb57472986c03ec5b0a7e4ce = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_024178783c514d869ed15a78266b4c79 = L.popup({"maxWidth": 500});
+
+        
+            var html_5b4c2cc2ca7748748377e5153a6a7565 = $(`<div id="html_5b4c2cc2ca7748748377e5153a6a7565" style="width: 100.0%; height: 100.0%;">Judea - Jerusalem ¦¦ JOH 7:3 ¦¦ "His brethren therefore said unto him, Depart hence, and go into JudÃ¦a, that thy disciples also may see the works that thou doest."</div>`)[0];
+            popup_024178783c514d869ed15a78266b4c79.setContent(html_5b4c2cc2ca7748748377e5153a6a7565);
+        
+
+        circle_marker_28235929bb57472986c03ec5b0a7e4ce.bindPopup(popup_024178783c514d869ed15a78266b4c79)
+        ;
+
+        
+    
+    
+            var circle_marker_91433ca3ea2a4d1f8df8872919cb5300 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_8f1e57c4aa32480d86a328bf38049d6d = L.popup({"maxWidth": 500});
+
+        
+            var html_ac0e6d6245de4d778a8a92a18fa90293 = $(`<div id="html_ac0e6d6245de4d778a8a92a18fa90293" style="width: 100.0%; height: 100.0%;">Judea - Jerusalem ¦¦ JOH 11:7 ¦¦ "Then after that saith he to [his] disciples, Let us go into JudÃ¦a again."</div>`)[0];
+            popup_8f1e57c4aa32480d86a328bf38049d6d.setContent(html_ac0e6d6245de4d778a8a92a18fa90293);
+        
+
+        circle_marker_91433ca3ea2a4d1f8df8872919cb5300.bindPopup(popup_8f1e57c4aa32480d86a328bf38049d6d)
+        ;
+
+        
+    
+    
+            var circle_marker_40560c2d8d3e488187590c1d484e37f7 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_670bb56b6c5f484ab3d358751c9c7468 = L.popup({"maxWidth": 500});
+
+        
+            var html_3af6402ff08346389661558e31af484b = $(`<div id="html_3af6402ff08346389661558e31af484b" style="width: 100.0%; height: 100.0%;">Judean - Jerusalem ¦¦ JOH 3:22 ¦¦ " After these things came Jesus and his disciples into the land of JudÃ¦a; and there he tarried with them, and baptized."</div>`)[0];
+            popup_670bb56b6c5f484ab3d358751c9c7468.setContent(html_3af6402ff08346389661558e31af484b);
+        
+
+        circle_marker_40560c2d8d3e488187590c1d484e37f7.bindPopup(popup_670bb56b6c5f484ab3d358751c9c7468)
+        ;
+
+        
+    
+    
+            var circle_marker_b5187cc9488045f9b5df250802d8df8c = L.circleMarker(
+                [31.772134, 35.236596],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_dfd649b0b6584fc6984dce4761b461ed = L.popup({"maxWidth": 500});
+
+        
+            var html_5d892eb8ee7c4c47b7093a8224bf955e = $(`<div id="html_5d892eb8ee7c4c47b7093a8224bf955e" style="width: 100.0%; height: 100.0%;">Kidron Valley - Kidron ¦¦ JOH 18:1 ¦¦ "When Jesus had spoken these words, he went forth with his disciples over the brook Cedron, where was a garden, into the which he entered, and his disciples."</div>`)[0];
+            popup_dfd649b0b6584fc6984dce4761b461ed.setContent(html_5d892eb8ee7c4c47b7093a8224bf955e);
+        
+
+        circle_marker_b5187cc9488045f9b5df250802d8df8c.bindPopup(popup_dfd649b0b6584fc6984dce4761b461ed)
+        ;
+
+        
+    
+    
+            var circle_marker_c9c205a0078746049d20150b09d9d4a6 = L.circleMarker(
+                [31.77809503, 35.24719761],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_9c29ab04876347448095c31ef590ee86 = L.popup({"maxWidth": 500});
+
+        
+            var html_289a1d70ce9b4e59914a7f808d852791 = $(`<div id="html_289a1d70ce9b4e59914a7f808d852791" style="width: 100.0%; height: 100.0%;">Mount of Olives - None ¦¦ JOH 8:1 ¦¦ "Jesus went unto the mount of Olives."</div>`)[0];
+            popup_9c29ab04876347448095c31ef590ee86.setContent(html_289a1d70ce9b4e59914a7f808d852791);
+        
+
+        circle_marker_c9c205a0078746049d20150b09d9d4a6.bindPopup(popup_9c29ab04876347448095c31ef590ee86)
+        ;
+
+        
+    
+    
+            var circle_marker_292e801f41fe4ebea0fc1f7e20e2aefb = L.circleMarker(
+                [32.70674542, 35.30152808],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_8afa7387b8e8468aa66318daa3839d78 = L.popup({"maxWidth": 500});
+
+        
+            var html_74d3d5440970412e8537b79308a6910b = $(`<div id="html_74d3d5440970412e8537b79308a6910b" style="width: 100.0%; height: 100.0%;">Nazareth - None ¦¦ JOH 1:45 ¦¦ "Philip findeth Nathanael, and saith unto him, We have found him, of whom Moses in the law, and the prophets, did write, Jesus of Nazareth, the son of Joseph."</div>`)[0];
+            popup_8afa7387b8e8468aa66318daa3839d78.setContent(html_74d3d5440970412e8537b79308a6910b);
+        
+
+        circle_marker_292e801f41fe4ebea0fc1f7e20e2aefb.bindPopup(popup_8afa7387b8e8468aa66318daa3839d78)
+        ;
+
+        
+    
+    
+            var circle_marker_bf6100e21bce4c70941de468635644dc = L.circleMarker(
+                [32.70674542, 35.30152808],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_1c4b3fc084e1447ea647b441c73c7940 = L.popup({"maxWidth": 500});
+
+        
+            var html_b523582939f345cd9e73ca059d81db13 = $(`<div id="html_b523582939f345cd9e73ca059d81db13" style="width: 100.0%; height: 100.0%;">Nazareth - None ¦¦ JOH 1:46 ¦¦ "And Nathanael said unto him, Can there any good thing come out of Nazareth? Philip saith unto him, Come and see."</div>`)[0];
+            popup_1c4b3fc084e1447ea647b441c73c7940.setContent(html_b523582939f345cd9e73ca059d81db13);
+        
+
+        circle_marker_bf6100e21bce4c70941de468635644dc.bindPopup(popup_1c4b3fc084e1447ea647b441c73c7940)
+        ;
+
+        
+    
+    
+            var circle_marker_39a1101d941546e4a546832e0b4d5f67 = L.circleMarker(
+                [32.70674542, 35.30152808],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_fbe5fb08f6bc4fa899e0c94dc022d260 = L.popup({"maxWidth": 500});
+
+        
+            var html_e6b92aaab4034cd5b7da9ce647c61e36 = $(`<div id="html_e6b92aaab4034cd5b7da9ce647c61e36" style="width: 100.0%; height: 100.0%;">Nazareth - None ¦¦ JOH 18:5 ¦¦ "They answered him, Jesus of Nazareth. Jesus saith unto them, I am [he]. And Judas also, which betrayed him, stood with them."</div>`)[0];
+            popup_fbe5fb08f6bc4fa899e0c94dc022d260.setContent(html_e6b92aaab4034cd5b7da9ce647c61e36);
+        
+
+        circle_marker_39a1101d941546e4a546832e0b4d5f67.bindPopup(popup_fbe5fb08f6bc4fa899e0c94dc022d260)
+        ;
+
+        
+    
+    
+            var circle_marker_080cc099497b4ebc8d1fdc06c85a0ed3 = L.circleMarker(
+                [32.70674542, 35.30152808],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_b5ae228072bd4553bcf582bc9f7f02b5 = L.popup({"maxWidth": 500});
+
+        
+            var html_54694cead0f04e1b80645a080603f06c = $(`<div id="html_54694cead0f04e1b80645a080603f06c" style="width: 100.0%; height: 100.0%;">Nazareth - None ¦¦ JOH 18:7 ¦¦ "Then asked he them again, Whom seek ye? And they said, Jesus of Nazareth."</div>`)[0];
+            popup_b5ae228072bd4553bcf582bc9f7f02b5.setContent(html_54694cead0f04e1b80645a080603f06c);
+        
+
+        circle_marker_080cc099497b4ebc8d1fdc06c85a0ed3.bindPopup(popup_b5ae228072bd4553bcf582bc9f7f02b5)
+        ;
+
+        
+    
+    
+            var circle_marker_20abae454b844f9c9c2d75ad6384f8ca = L.circleMarker(
+                [32.70674542, 35.30152808],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_bc231e4697f34442a45b76ab8d3b71e0 = L.popup({"maxWidth": 500});
+
+        
+            var html_cff8f4518d8343dcbfd73231b5fe410c = $(`<div id="html_cff8f4518d8343dcbfd73231b5fe410c" style="width: 100.0%; height: 100.0%;">Nazareth - None ¦¦ JOH 19:19 ¦¦ " And Pilate wrote a title, and put [it] on the cross. And the writing was, JESUS OF NAZARETH THE KING OF THE JEWS."</div>`)[0];
+            popup_bc231e4697f34442a45b76ab8d3b71e0.setContent(html_cff8f4518d8343dcbfd73231b5fe410c);
+        
+
+        circle_marker_20abae454b844f9c9c2d75ad6384f8ca.bindPopup(popup_bc231e4697f34442a45b76ab8d3b71e0)
+        ;
+
+        
+    
+    
+            var circle_marker_38bb9d4b4f88499aac26a77e1a031011 = L.circleMarker(
+                [32.39933414, 35.5264431],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_621c09817b81445c91f456c208bb00a6 = L.popup({"maxWidth": 500});
+
+        
+            var html_76c71da4427140b69a77c9de95093758 = $(`<div id="html_76c71da4427140b69a77c9de95093758" style="width: 100.0%; height: 100.0%;">Salim - None ¦¦ JOH 3:23 ¦¦ " And John also was baptizing in Ã†non near to Salim, because there was much water there: and they came, and were baptized."</div>`)[0];
+            popup_621c09817b81445c91f456c208bb00a6.setContent(html_76c71da4427140b69a77c9de95093758);
+        
+
+        circle_marker_38bb9d4b4f88499aac26a77e1a031011.bindPopup(popup_621c09817b81445c91f456c208bb00a6)
+        ;
+
+        
+    
+    
+            var circle_marker_3f3fd255683d42e2aec875cb72b5fa94 = L.circleMarker(
+                [32.280231, 35.197928999999995],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_ae84efe318364ce0a9144dec591a8f9c = L.popup({"maxWidth": 500});
+
+        
+            var html_65d0486444e847dfa091325ed6628593 = $(`<div id="html_65d0486444e847dfa091325ed6628593" style="width: 100.0%; height: 100.0%;">Samaria - None ¦¦ JOH 4:4 ¦¦ "And he must needs go through Samaria."</div>`)[0];
+            popup_ae84efe318364ce0a9144dec591a8f9c.setContent(html_65d0486444e847dfa091325ed6628593);
+        
+
+        circle_marker_3f3fd255683d42e2aec875cb72b5fa94.bindPopup(popup_ae84efe318364ce0a9144dec591a8f9c)
+        ;
+
+        
+    
+    
+            var circle_marker_278cf2f7f8be4167bfdc7a4e13f0db06 = L.circleMarker(
+                [32.280231, 35.197928999999995],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_3146dbddf83b464988d4a826a5c6fc9d = L.popup({"maxWidth": 500});
+
+        
+            var html_ed6f6dbf75be4ebd9b52ae98ad5a76f6 = $(`<div id="html_ed6f6dbf75be4ebd9b52ae98ad5a76f6" style="width: 100.0%; height: 100.0%;">Samaria - None ¦¦ JOH 4:5 ¦¦ "Then cometh he to a city of Samaria, which is called Sychar, near to the parcel of ground that Jacob gave to his son Joseph."</div>`)[0];
+            popup_3146dbddf83b464988d4a826a5c6fc9d.setContent(html_ed6f6dbf75be4ebd9b52ae98ad5a76f6);
+        
+
+        circle_marker_278cf2f7f8be4167bfdc7a4e13f0db06.bindPopup(popup_3146dbddf83b464988d4a826a5c6fc9d)
+        ;
+
+        
+    
+    
+            var circle_marker_73097819622049d29600f1844cc5b0ef = L.circleMarker(
+                [32.280231, 35.197928999999995],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_e8f6d24bc99248f98c942514d1a0f73b = L.popup({"maxWidth": 500});
+
+        
+            var html_7d5d7b083bca45f7826030091efd5541 = $(`<div id="html_7d5d7b083bca45f7826030091efd5541" style="width: 100.0%; height: 100.0%;">Samaria - None ¦¦ JOH 4:7 ¦¦ "There cometh a woman of Samaria to draw water: Jesus saith unto her, Give me to drink."</div>`)[0];
+            popup_e8f6d24bc99248f98c942514d1a0f73b.setContent(html_7d5d7b083bca45f7826030091efd5541);
+        
+
+        circle_marker_73097819622049d29600f1844cc5b0ef.bindPopup(popup_e8f6d24bc99248f98c942514d1a0f73b)
+        ;
+
+        
+    
+    
+            var circle_marker_44e40e1516c14ff0b3f35bd7a8d04876 = L.circleMarker(
+                [32.280231, 35.197928999999995],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_7020d3bf453f48fa8172b83b1a5a364d = L.popup({"maxWidth": 500});
+
+        
+            var html_75ad3380561648759a6dd2da85d825ea = $(`<div id="html_75ad3380561648759a6dd2da85d825ea" style="width: 100.0%; height: 100.0%;">Samaria - None ¦¦ JOH 4:9 ¦¦ "Then saith the woman of Samaria unto him, How is it that thou, being a Jew, askest drink of me, which am a woman of Samaria? for the Jews have no dealings with the Samaritans."</div>`)[0];
+            popup_7020d3bf453f48fa8172b83b1a5a364d.setContent(html_75ad3380561648759a6dd2da85d825ea);
+        
+
+        circle_marker_44e40e1516c14ff0b3f35bd7a8d04876.bindPopup(popup_7020d3bf453f48fa8172b83b1a5a364d)
+        ;
+
+        
+    
+    
+            var circle_marker_0e46f41b347748ed8f2dd9d64332faf8 = L.circleMarker(
+                [32.280231, 35.197928999999995],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_ec10f6b8aa1e430c93c05ea1fe148439 = L.popup({"maxWidth": 500});
+
+        
+            var html_269d2a53de434cb39dc5456ed5315efa = $(`<div id="html_269d2a53de434cb39dc5456ed5315efa" style="width: 100.0%; height: 100.0%;">Samaria - None ¦¦ JOH 4:4 ¦¦ "And he must needs go through Samaria."</div>`)[0];
+            popup_ec10f6b8aa1e430c93c05ea1fe148439.setContent(html_269d2a53de434cb39dc5456ed5315efa);
+        
+
+        circle_marker_0e46f41b347748ed8f2dd9d64332faf8.bindPopup(popup_ec10f6b8aa1e430c93c05ea1fe148439)
+        ;
+
+        
+    
+    
+            var circle_marker_333ed9540c214aacad9c2d0205c1e92c = L.circleMarker(
+                [32.280231, 35.197928999999995],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_855a0ef8c66f43168be13c72a0824819 = L.popup({"maxWidth": 500});
+
+        
+            var html_ee7b040bdab04c368de9949074c0f824 = $(`<div id="html_ee7b040bdab04c368de9949074c0f824" style="width: 100.0%; height: 100.0%;">Samaria - None ¦¦ JOH 4:5 ¦¦ "Then cometh he to a city of Samaria, which is called Sychar, near to the parcel of ground that Jacob gave to his son Joseph."</div>`)[0];
+            popup_855a0ef8c66f43168be13c72a0824819.setContent(html_ee7b040bdab04c368de9949074c0f824);
+        
+
+        circle_marker_333ed9540c214aacad9c2d0205c1e92c.bindPopup(popup_855a0ef8c66f43168be13c72a0824819)
+        ;
+
+        
+    
+    
+            var circle_marker_3d4870e657d246dda271def2a9b6c580 = L.circleMarker(
+                [32.280231, 35.197928999999995],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_41e49db9c4884e44adafde08da430c62 = L.popup({"maxWidth": 500});
+
+        
+            var html_d3f2198aa9e845fc95c3ed73ebe1a353 = $(`<div id="html_d3f2198aa9e845fc95c3ed73ebe1a353" style="width: 100.0%; height: 100.0%;">Samaria - None ¦¦ JOH 4:7 ¦¦ "There cometh a woman of Samaria to draw water: Jesus saith unto her, Give me to drink."</div>`)[0];
+            popup_41e49db9c4884e44adafde08da430c62.setContent(html_d3f2198aa9e845fc95c3ed73ebe1a353);
+        
+
+        circle_marker_3d4870e657d246dda271def2a9b6c580.bindPopup(popup_41e49db9c4884e44adafde08da430c62)
+        ;
+
+        
+    
+    
+            var circle_marker_896b7c3edef442f8b9cdae9a1b94bf74 = L.circleMarker(
+                [32.280231, 35.197928999999995],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_9ff3955e939946cb82813033303e9e7d = L.popup({"maxWidth": 500});
+
+        
+            var html_76ad25a5373c4afda5181793e2bc3773 = $(`<div id="html_76ad25a5373c4afda5181793e2bc3773" style="width: 100.0%; height: 100.0%;">Samaria - None ¦¦ JOH 4:9 ¦¦ "Then saith the woman of Samaria unto him, How is it that thou, being a Jew, askest drink of me, which am a woman of Samaria? for the Jews have no dealings with the Samaritans."</div>`)[0];
+            popup_9ff3955e939946cb82813033303e9e7d.setContent(html_76ad25a5373c4afda5181793e2bc3773);
+        
+
+        circle_marker_896b7c3edef442f8b9cdae9a1b94bf74.bindPopup(popup_9ff3955e939946cb82813033303e9e7d)
+        ;
+
+        
+    
+    
+            var circle_marker_2604563bc6c74f35afd1b62c8509a26a = L.circleMarker(
+                [32.80677586, 35.58936053],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_15efd93310704e49b21d07f7f15f631c = L.popup({"maxWidth": 500});
+
+        
+            var html_70241ad1d8024b30b8150161e342efb8 = $(`<div id="html_70241ad1d8024b30b8150161e342efb8" style="width: 100.0%; height: 100.0%;">Sea ofGALilee - None ¦¦ JOH 6:1 ¦¦ "After these things Jesus went over the sea of Galilee, which is [the sea] of Tiberias."</div>`)[0];
+            popup_15efd93310704e49b21d07f7f15f631c.setContent(html_70241ad1d8024b30b8150161e342efb8);
+        
+
+        circle_marker_2604563bc6c74f35afd1b62c8509a26a.bindPopup(popup_15efd93310704e49b21d07f7f15f631c)
+        ;
+
+        
+    
+    
+            var circle_marker_776dd7436a9f4246a853ca9d6402ec60 = L.circleMarker(
+                [32.80677586, 35.58936053],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_795951d7362f43369a6eab10d5b0d553 = L.popup({"maxWidth": 500});
+
+        
+            var html_3e91b36e996c4ad4a80f18494b638b15 = $(`<div id="html_3e91b36e996c4ad4a80f18494b638b15" style="width: 100.0%; height: 100.0%;">Sea of Tiberias - Sea ofGALilee ¦¦ JOH 6:1 ¦¦ "After these things Jesus went over the sea of Galilee, which is [the sea] of Tiberias."</div>`)[0];
+            popup_795951d7362f43369a6eab10d5b0d553.setContent(html_3e91b36e996c4ad4a80f18494b638b15);
+        
+
+        circle_marker_776dd7436a9f4246a853ca9d6402ec60.bindPopup(popup_795951d7362f43369a6eab10d5b0d553)
+        ;
+
+        
+    
+    
+            var circle_marker_5bd95149b7bf4e1692fa5fc97ac1645f = L.circleMarker(
+                [32.80677586, 35.58936053],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_c3595a2d739141f7b4938abe8bc1ac51 = L.popup({"maxWidth": 500});
+
+        
+            var html_7eaad88745454926ac319690ec1e739f = $(`<div id="html_7eaad88745454926ac319690ec1e739f" style="width: 100.0%; height: 100.0%;">Sea of Tiberias - Sea ofGALilee ¦¦ JOH 21:1 ¦¦ "After these things Jesus shewed himself again to the disciples at the sea of Tiberias; and on this wise shewed he [himself]."</div>`)[0];
+            popup_c3595a2d739141f7b4938abe8bc1ac51.setContent(html_7eaad88745454926ac319690ec1e739f);
+        
+
+        circle_marker_5bd95149b7bf4e1692fa5fc97ac1645f.bindPopup(popup_c3595a2d739141f7b4938abe8bc1ac51)
+        ;
+
+        
+    
+    
+            var circle_marker_1843f4c0f74b48ab8c5e1a8a5393c1f9 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_512f5cb0ba7e483bac457b7faffa57f5 = L.popup({"maxWidth": 500});
+
+        
+            var html_090b212f92f14887bea560ac8f8ad398 = $(`<div id="html_090b212f92f14887bea560ac8f8ad398" style="width: 100.0%; height: 100.0%;">Sheep Gate - Jerusalem ¦¦ JOH 5:2 ¦¦ "Now there is at Jerusalem by the sheep [market] a pool, which is called in the Hebrew tongue Bethesda, having five porches."</div>`)[0];
+            popup_512f5cb0ba7e483bac457b7faffa57f5.setContent(html_090b212f92f14887bea560ac8f8ad398);
+        
+
+        circle_marker_1843f4c0f74b48ab8c5e1a8a5393c1f9.bindPopup(popup_512f5cb0ba7e483bac457b7faffa57f5)
+        ;
+
+        
+    
+    
+            var circle_marker_69fc6435f33341fb9e7deed135397f68 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_16e12570dced488992d297d6270233e9 = L.popup({"maxWidth": 500});
+
+        
+            var html_67c0f1ffaa8949989207de00fecad41e = $(`<div id="html_67c0f1ffaa8949989207de00fecad41e" style="width: 100.0%; height: 100.0%;">Siloam - Jerusalem ¦¦ JOH 9:7 ¦¦ "And said unto him, Go, wash in the pool of Siloam, (which is by interpretation, Sent.) He went his way therefore, and washed, and came seeing."</div>`)[0];
+            popup_16e12570dced488992d297d6270233e9.setContent(html_67c0f1ffaa8949989207de00fecad41e);
+        
+
+        circle_marker_69fc6435f33341fb9e7deed135397f68.bindPopup(popup_16e12570dced488992d297d6270233e9)
+        ;
+
+        
+    
+    
+            var circle_marker_25cd470f7ddb4dfa98413fe8cc0124c8 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_f706be619d8e49c2ab1a9e6b628b556d = L.popup({"maxWidth": 500});
+
+        
+            var html_b845fc842dd3482d83fed37471d57fd2 = $(`<div id="html_b845fc842dd3482d83fed37471d57fd2" style="width: 100.0%; height: 100.0%;">Siloam - Jerusalem ¦¦ JOH 9:11 ¦¦ "He answered and said, A man that is called Jesus made clay, and anointed mine eyes, and said unto me, Go to the pool of Siloam, and wash: and I went and washed, and I received sight."</div>`)[0];
+            popup_f706be619d8e49c2ab1a9e6b628b556d.setContent(html_b845fc842dd3482d83fed37471d57fd2);
+        
+
+        circle_marker_25cd470f7ddb4dfa98413fe8cc0124c8.bindPopup(popup_f706be619d8e49c2ab1a9e6b628b556d)
+        ;
+
+        
+    
+    
+            var circle_marker_da65105766ee4742a97d05494e02c753 = L.circleMarker(
+                [32.20307657, 35.31192106],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_1a27cde702fd4450843b08cfbbce7b6c = L.popup({"maxWidth": 500});
+
+        
+            var html_c3860ac4db6d4126bb99a16f2a5feccb = $(`<div id="html_c3860ac4db6d4126bb99a16f2a5feccb" style="width: 100.0%; height: 100.0%;">Sychar - None ¦¦ JOH 4:5 ¦¦ "Then cometh he to a city of Samaria, which is called Sychar, near to the parcel of ground that Jacob gave to his son Joseph."</div>`)[0];
+            popup_1a27cde702fd4450843b08cfbbce7b6c.setContent(html_c3860ac4db6d4126bb99a16f2a5feccb);
+        
+
+        circle_marker_da65105766ee4742a97d05494e02c753.bindPopup(popup_1a27cde702fd4450843b08cfbbce7b6c)
+        ;
+
+        
+    
+    
+            var circle_marker_50d2437af72b44eb87e9e83c5b23a04a = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_155a089995934e0e9b299a0779ea49b8 = L.popup({"maxWidth": 500});
+
+        
+            var html_59c0a580fb3d4f59ab2ee4b4acdf3eeb = $(`<div id="html_59c0a580fb3d4f59ab2ee4b4acdf3eeb" style="width: 100.0%; height: 100.0%;">The Place of a Skull - Jerusalem ¦¦ JOH 19:17 ¦¦ "And he bearing his cross went forth into a place called [the place] of a skull, which is called in the Hebrew Golgotha:"</div>`)[0];
+            popup_155a089995934e0e9b299a0779ea49b8.setContent(html_59c0a580fb3d4f59ab2ee4b4acdf3eeb);
+        
+
+        circle_marker_50d2437af72b44eb87e9e83c5b23a04a.bindPopup(popup_155a089995934e0e9b299a0779ea49b8)
+        ;
+
+        
+    
+    
+            var circle_marker_aa39e986a5094a9fa3ef64d1c886d153 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_1c7e22ff8f4240bebeb208cddc91052d = L.popup({"maxWidth": 500});
+
+        
+            var html_0265c71b88e445a6bbae1ab0b5c324c8 = $(`<div id="html_0265c71b88e445a6bbae1ab0b5c324c8" style="width: 100.0%; height: 100.0%;">The Stone Pavement - Jerusalem ¦¦ JOH 19:13 ¦¦ " When Pilate therefore heard that saying, he brought Jesus forth, and sat down in the judgment seat in a place that is called the Pavement, but in the Hebrew, Gabbatha."</div>`)[0];
+            popup_1c7e22ff8f4240bebeb208cddc91052d.setContent(html_0265c71b88e445a6bbae1ab0b5c324c8);
+        
+
+        circle_marker_aa39e986a5094a9fa3ef64d1c886d153.bindPopup(popup_1c7e22ff8f4240bebeb208cddc91052d)
+        ;
+
+        
+    
+    
+            var circle_marker_fdd1ae5577a24490baeb898ec807c530 = L.circleMarker(
+                [32.79553799, 35.5292204],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_ba9768edc513496598b728a1e63df5e2 = L.popup({"maxWidth": 500});
+
+        
+            var html_2ded3f580257456782a534d755e30a4a = $(`<div id="html_2ded3f580257456782a534d755e30a4a" style="width: 100.0%; height: 100.0%;">Tiberias - None ¦¦ JOH 6:23 ¦¦ "(Howbeit there came other boats from Tiberias nigh unto the place where they did eat bread, after that the Lord had given thanks:)"</div>`)[0];
+            popup_ba9768edc513496598b728a1e63df5e2.setContent(html_2ded3f580257456782a534d755e30a4a);
+        
+
+        circle_marker_fdd1ae5577a24490baeb898ec807c530.bindPopup(popup_ba9768edc513496598b728a1e63df5e2)
+        ;
+
+        
+    
+    
+            var circle_marker_ac2c60f4527046878a3bf761a351d020 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb);
+        
+    
+        var popup_1eecd5748a604190afa14d591aa49a10 = L.popup({"maxWidth": 500});
+
+        
+            var html_01b1d8ec512946aab4eb8142136a11b5 = $(`<div id="html_01b1d8ec512946aab4eb8142136a11b5" style="width: 100.0%; height: 100.0%;">Zion - Jerusalem ¦¦ JOH 12:15 ¦¦ "Fear not, daughter of Sion: behold, thy King cometh, sitting on an assâ€™s colt."</div>`)[0];
+            popup_1eecd5748a604190afa14d591aa49a10.setContent(html_01b1d8ec512946aab4eb8142136a11b5);
+        
+
+        circle_marker_ac2c60f4527046878a3bf761a351d020.bindPopup(popup_1eecd5748a604190afa14d591aa49a10)
+        ;
+
+        
+    
+    
+            var feature_group_9b560ba3573d4741bc59c84926005da3 = L.featureGroup(
+                {}
+            ).addTo(map_23473910e57945b7adb9e603a9aa9623);
+        
+    
+            var heat_map_ae0e3f36b5d04ce1a0e518bb3a92d243 = L.heatLayer(
+                [[32.398936, 35.54351], [31.83273947, 35.18016286], [31.77166591, 35.26212204], [31.77166591, 35.26212204], [31.77166591, 35.26212204], [31.83632115, 35.55260017], [31.777444, 35.234935], [32.90784828, 35.62697296], [32.90784828, 35.62697296], [32.74701518, 35.33877162], [32.74701518, 35.33877162], [32.74701518, 35.33877162], [32.74701518, 35.33877162], [32.88059413, 35.57515767], [32.88059413, 35.57515767], [32.88059413, 35.57515767], [32.88059413, 35.57515767], [32.88059413, 35.57515767], [31.95378956, 35.29913578], [31.777444, 35.234935], [32.70674542, 35.30152808], [32.70674542, 35.30152808], [32.70674542, 35.30152808], [32.70674542, 35.30152808], [32.70674542, 35.30152808], [32.70674542, 35.30152808], [32.70674542, 35.30152808], [32.70674542, 35.30152808], [32.70674542, 35.30152808], [32.70674542, 35.30152808], [32.70674542, 35.30152808], [32.70674542, 35.30152808], [32.70674542, 35.30152808], [32.70674542, 35.30152808], [32.70674542, 35.30152808], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [32.309098999999996, 35.5599], [32.309098999999996, 35.5599], [32.309098999999996, 35.5599], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [31.772134, 35.236596], [31.77809503, 35.24719761], [32.70674542, 35.30152808], [32.70674542, 35.30152808], [32.70674542, 35.30152808], [32.70674542, 35.30152808], [32.70674542, 35.30152808], [32.39933414, 35.5264431], [32.280231, 35.197928999999995], [32.280231, 35.197928999999995], [32.280231, 35.197928999999995], [32.280231, 35.197928999999995], [32.280231, 35.197928999999995], [32.280231, 35.197928999999995], [32.280231, 35.197928999999995], [32.280231, 35.197928999999995], [32.80677586, 35.58936053], [32.80677586, 35.58936053], [32.80677586, 35.58936053], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [32.20307657, 35.31192106], [31.777444, 35.234935], [31.777444, 35.234935], [32.79553799, 35.5292204], [31.777444, 35.234935]],
+                {"blur": 15, "max": 1.0, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
+            ).addTo(feature_group_9b560ba3573d4741bc59c84926005da3);
+        
+    
+            var layer_control_11d2c2784794479f8bc23ade2a7579fd = {
+                base_layers : {
+                    "Mapbox Satellite" : tile_layer_8c81e8af21d24a59864c87fbda622ebb,
+                },
+                overlays :  {
+                    "Verse Locations" : feature_group_d9ffeb5c136f4db4b4c1c773bd4fd0fb,
+                    "Heat Map" : feature_group_9b560ba3573d4741bc59c84926005da3,
+                },
+            };
+            L.control.layers(
+                layer_control_11d2c2784794479f8bc23ade2a7579fd.base_layers,
+                layer_control_11d2c2784794479f8bc23ade2a7579fd.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_23473910e57945b7adb9e603a9aa9623);
+        
+</script>

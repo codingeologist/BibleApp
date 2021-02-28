@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b2e076229a234bd6b108fbb2496533a1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+</head>
+<body>    
+    <title>BibleMapApp - Revelation Map</title>
+    
+            <div class="folium-map" id="map_b2e076229a234bd6b108fbb2496533a1" ></div>
+        
+</body>
+<script>    
+    
+            var map_b2e076229a234bd6b108fbb2496533a1 = L.map(
+                "map_b2e076229a234bd6b108fbb2496533a1",
+                {
+                    center: [39.23, 32.73],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fa1ac340f2684b029d2cf32398eb3b2f = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/codingeologist/ck9vc6aes0kwo1jn3ei75j6da/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiY29kaW5nZW9sb2dpc3QiLCJhIjoiY2s5dmMyZWp6MGEyNzNmbW9wNGVmcnV2diJ9.hk99FJ_5V5AMkbDHF0Dv5w",
+                {"attribution": "\u003ca href=https://ebible.org/\u003e\u00a9 eBible\u003c/a\u003e | \u003ca href=http://www.openbible.info/\u003e\u00a9 OpenBible\u003c/a\u003e | \u003ca href=https://www.mapbox.com/about/maps/\u003e\u00a9 Mapbox\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 26, "maxZoom": 26, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b2e076229a234bd6b108fbb2496533a1);
+        
+    
+            var feature_group_8766a232d7e94978a22b64ca91045144 = L.featureGroup(
+                {}
+            ).addTo(map_b2e076229a234bd6b108fbb2496533a1);
+        
+    
+            var circle_marker_ae76d0e0c46a4102908df6111b33a682 = L.circleMarker(
+                [32.58418314, 35.18229166],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_59f7d2f970b54e91ad0bbafa0671a57a = L.popup({"maxWidth": 500});
+
+        
+            var html_be5fb5c931974899b13d18b639faed06 = $(`<div id="html_be5fb5c931974899b13d18b639faed06" style="width: 100.0%; height: 100.0%;">Armageddon - Megiddo ¦¦ REV 16:16 ¦¦ "And he gathered them together into a place called in the Hebrew tongue Armageddon."</div>`)[0];
+            popup_59f7d2f970b54e91ad0bbafa0671a57a.setContent(html_be5fb5c931974899b13d18b639faed06);
+        
+
+        circle_marker_ae76d0e0c46a4102908df6111b33a682.bindPopup(popup_59f7d2f970b54e91ad0bbafa0671a57a)
+        ;
+
+        
+    
+    
+            var circle_marker_14b8c807f4d24152a568870b9b8cafff = L.circleMarker(
+                [39.23, 32.73],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_b08ac924b5fc4e5f90710da287cbea3b = L.popup({"maxWidth": 500});
+
+        
+            var html_87e3a7c1e24d40719276562157bb6021 = $(`<div id="html_87e3a7c1e24d40719276562157bb6021" style="width: 100.0%; height: 100.0%;">Asia - None ¦¦ REV 1:4 ¦¦ "John to the seven churches which are in Asia: Grace [be] unto you, and peace, from him which is, and which was, and which is to come; and from the seven Spirits which are before his throne;"</div>`)[0];
+            popup_b08ac924b5fc4e5f90710da287cbea3b.setContent(html_87e3a7c1e24d40719276562157bb6021);
+        
+
+        circle_marker_14b8c807f4d24152a568870b9b8cafff.bindPopup(popup_b08ac924b5fc4e5f90710da287cbea3b)
+        ;
+
+        
+    
+    
+            var circle_marker_b03ab20299c647ea82cf5a2ed81dd58d = L.circleMarker(
+                [32.53650369, 44.42088287],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_34f181aadec943ea98108415a19dbf76 = L.popup({"maxWidth": 500});
+
+        
+            var html_965eb4af74354a66aad2596e3484d103 = $(`<div id="html_965eb4af74354a66aad2596e3484d103" style="width: 100.0%; height: 100.0%;">Babylon - Babel ¦¦ REV 14:8 ¦¦ "And there followed another angel, saying, Babylon is fallen, is fallen, that great city, because she made all nations drink of the wine of the wrath of her fornication."</div>`)[0];
+            popup_34f181aadec943ea98108415a19dbf76.setContent(html_965eb4af74354a66aad2596e3484d103);
+        
+
+        circle_marker_b03ab20299c647ea82cf5a2ed81dd58d.bindPopup(popup_34f181aadec943ea98108415a19dbf76)
+        ;
+
+        
+    
+    
+            var circle_marker_ef131ae9ae264491b5e4115b37f4c0e1 = L.circleMarker(
+                [32.53650369, 44.42088287],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_e30eab427ecb450baca09cd132882a53 = L.popup({"maxWidth": 500});
+
+        
+            var html_c1c49acf35994c20aa08babb32b48d9a = $(`<div id="html_c1c49acf35994c20aa08babb32b48d9a" style="width: 100.0%; height: 100.0%;">Babylon - Babel ¦¦ REV 16:19 ¦¦ "And the great city was divided into three parts, and the cities of the nations fell: and great Babylon came in remembrance before God, to give unto her the cup of the wine of the fierceness of his wrath."</div>`)[0];
+            popup_e30eab427ecb450baca09cd132882a53.setContent(html_c1c49acf35994c20aa08babb32b48d9a);
+        
+
+        circle_marker_ef131ae9ae264491b5e4115b37f4c0e1.bindPopup(popup_e30eab427ecb450baca09cd132882a53)
+        ;
+
+        
+    
+    
+            var circle_marker_f927dbfad91c40438d82396f8a8be767 = L.circleMarker(
+                [32.53650369, 44.42088287],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_098ab240bca4429ea728807975619305 = L.popup({"maxWidth": 500});
+
+        
+            var html_a33db9a742f443a7b2e8f2e165ea55d1 = $(`<div id="html_a33db9a742f443a7b2e8f2e165ea55d1" style="width: 100.0%; height: 100.0%;">Babylon - Babel ¦¦ REV 17:5 ¦¦ "And upon her forehead [was] a name written, MYSTERY, BABYLON THE GREAT, THE MOTHER OF HARLOTS AND ABOMINATIONS OF THE EARTH."</div>`)[0];
+            popup_098ab240bca4429ea728807975619305.setContent(html_a33db9a742f443a7b2e8f2e165ea55d1);
+        
+
+        circle_marker_f927dbfad91c40438d82396f8a8be767.bindPopup(popup_098ab240bca4429ea728807975619305)
+        ;
+
+        
+    
+    
+            var circle_marker_2d1aa63aa18d448cb36476c029e14bbf = L.circleMarker(
+                [32.53650369, 44.42088287],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_0067e258c41a425ea564178f36cc0f30 = L.popup({"maxWidth": 500});
+
+        
+            var html_9dd9717ddc7349dd9713c9770ad20171 = $(`<div id="html_9dd9717ddc7349dd9713c9770ad20171" style="width: 100.0%; height: 100.0%;">Babylon - Babel ¦¦ REV 18:2 ¦¦ "And he cried mightily with a strong voice, saying, Babylon the great is fallen, is fallen, and is become the habitation of devils, and the hold of every foul spirit, and a cage of every unclean and hateful bird."</div>`)[0];
+            popup_0067e258c41a425ea564178f36cc0f30.setContent(html_9dd9717ddc7349dd9713c9770ad20171);
+        
+
+        circle_marker_2d1aa63aa18d448cb36476c029e14bbf.bindPopup(popup_0067e258c41a425ea564178f36cc0f30)
+        ;
+
+        
+    
+    
+            var circle_marker_92ffc8dd7cd1437da72bb5b7553eda13 = L.circleMarker(
+                [32.53650369, 44.42088287],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_ed539f63e6ba486e9a6c94466dd15bae = L.popup({"maxWidth": 500});
+
+        
+            var html_9819d2c03d404c0f875556df95e02f75 = $(`<div id="html_9819d2c03d404c0f875556df95e02f75" style="width: 100.0%; height: 100.0%;">Babylon - Babel ¦¦ REV 18:10 ¦¦ "Standing afar off for the fear of her torment, saying, Alas, alas, that great city Babylon, that mighty city! for in one hour is thy judgment come."</div>`)[0];
+            popup_ed539f63e6ba486e9a6c94466dd15bae.setContent(html_9819d2c03d404c0f875556df95e02f75);
+        
+
+        circle_marker_92ffc8dd7cd1437da72bb5b7553eda13.bindPopup(popup_ed539f63e6ba486e9a6c94466dd15bae)
+        ;
+
+        
+    
+    
+            var circle_marker_1ee90010df914d86adba537d5dbce684 = L.circleMarker(
+                [32.53650369, 44.42088287],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_127f8ee7e6e34c47912565a78881fc8d = L.popup({"maxWidth": 500});
+
+        
+            var html_fab3e8b3571c4b928f3ca816cc4757d3 = $(`<div id="html_fab3e8b3571c4b928f3ca816cc4757d3" style="width: 100.0%; height: 100.0%;">Babylon - Babel ¦¦ REV 18:21 ¦¦ "And a mighty angel took up a stone like a great millstone, and cast [it] into the sea, saying, Thus with violence shall that great city Babylon be thrown down, and shall be found no more at all."</div>`)[0];
+            popup_127f8ee7e6e34c47912565a78881fc8d.setContent(html_fab3e8b3571c4b928f3ca816cc4757d3);
+        
+
+        circle_marker_1ee90010df914d86adba537d5dbce684.bindPopup(popup_127f8ee7e6e34c47912565a78881fc8d)
+        ;
+
+        
+    
+    
+            var circle_marker_d1420560765a476d9ae1dbcc81d82fa0 = L.circleMarker(
+                [30.10864, 31.338774],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_fe7d248721af4790b6ac35b78909c0cd = L.popup({"maxWidth": 500});
+
+        
+            var html_c952752e3b9a4a27a749b77edf7a4e2d = $(`<div id="html_c952752e3b9a4a27a749b77edf7a4e2d" style="width: 100.0%; height: 100.0%;">Egypt - On ¦¦ REV 11:8 ¦¦ "And their dead bodies [shall lie] in the street of the great city, which spiritually is called Sodom and Egypt, where also our Lord was crucified."</div>`)[0];
+            popup_fe7d248721af4790b6ac35b78909c0cd.setContent(html_c952752e3b9a4a27a749b77edf7a4e2d);
+        
+
+        circle_marker_d1420560765a476d9ae1dbcc81d82fa0.bindPopup(popup_fe7d248721af4790b6ac35b78909c0cd)
+        ;
+
+        
+    
+    
+            var circle_marker_2d7d1166c3b54db28e43b79c069fd9fd = L.circleMarker(
+                [37.95331434, 27.36782512],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_7f85aa413b0f42168d1b08e4e718a1f2 = L.popup({"maxWidth": 500});
+
+        
+            var html_110802549ddf4690a3321cb3c1ec8c9f = $(`<div id="html_110802549ddf4690a3321cb3c1ec8c9f" style="width: 100.0%; height: 100.0%;">Ephesus - None ¦¦ REV 1:11 ¦¦ "Saying, I am Alpha and Omega, the first and the last: and, What thou seest, write in a book, and send [it] unto the seven churches which are in Asia; unto Ephesus, and unto Smyrna, and unto Pergamos, and unto Thyatira, and unto Sardis, and unto Philadelphia, and unto Laodicea."</div>`)[0];
+            popup_7f85aa413b0f42168d1b08e4e718a1f2.setContent(html_110802549ddf4690a3321cb3c1ec8c9f);
+        
+
+        circle_marker_2d7d1166c3b54db28e43b79c069fd9fd.bindPopup(popup_7f85aa413b0f42168d1b08e4e718a1f2)
+        ;
+
+        
+    
+    
+            var circle_marker_81614af77ab0461cb5c6e0bce0d703e6 = L.circleMarker(
+                [37.95331434, 27.36782512],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_151cccf0aa4242f58f522ca981eb8940 = L.popup({"maxWidth": 500});
+
+        
+            var html_731232081402498f8c132ea68285603f = $(`<div id="html_731232081402498f8c132ea68285603f" style="width: 100.0%; height: 100.0%;">Ephesus - None ¦¦ REV 2:1 ¦¦ "Unto the angel of the church of Ephesus write; These things saith he that holdeth the seven stars in his right hand, who walketh in the midst of the seven golden candlesticks;"</div>`)[0];
+            popup_151cccf0aa4242f58f522ca981eb8940.setContent(html_731232081402498f8c132ea68285603f);
+        
+
+        circle_marker_81614af77ab0461cb5c6e0bce0d703e6.bindPopup(popup_151cccf0aa4242f58f522ca981eb8940)
+        ;
+
+        
+    
+    
+            var circle_marker_2353ea99a4cf491880b448246b678f50 = L.circleMarker(
+                [35.090577, 40.42778],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_78a7a430b2864462a3bc6286b1ad4439 = L.popup({"maxWidth": 500});
+
+        
+            var html_259061e9c7904172be60629a6136794f = $(`<div id="html_259061e9c7904172be60629a6136794f" style="width: 100.0%; height: 100.0%;">Euphrates - None ¦¦ REV 9:14 ¦¦ "Saying to the sixth angel which had the trumpet, Loose the four angels which are bound in the great river Euphrates."</div>`)[0];
+            popup_78a7a430b2864462a3bc6286b1ad4439.setContent(html_259061e9c7904172be60629a6136794f);
+        
+
+        circle_marker_2353ea99a4cf491880b448246b678f50.bindPopup(popup_78a7a430b2864462a3bc6286b1ad4439)
+        ;
+
+        
+    
+    
+            var circle_marker_1232f76fcb3b43e98bf4580365b0a606 = L.circleMarker(
+                [35.090577, 40.42778],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_76541d03c8914b059c058b60dfe309a2 = L.popup({"maxWidth": 500});
+
+        
+            var html_62b9b61e90e74327ae155ccfa48486af = $(`<div id="html_62b9b61e90e74327ae155ccfa48486af" style="width: 100.0%; height: 100.0%;">Euphrates - None ¦¦ REV 16:12 ¦¦ "And the sixth angel poured out his vial upon the great river Euphrates; and the water thereof was dried up, that the way of the kings of the east might be prepared."</div>`)[0];
+            popup_76541d03c8914b059c058b60dfe309a2.setContent(html_62b9b61e90e74327ae155ccfa48486af);
+        
+
+        circle_marker_1232f76fcb3b43e98bf4580365b0a606.bindPopup(popup_76541d03c8914b059c058b60dfe309a2)
+        ;
+
+        
+    
+    
+            var circle_marker_a65c5ae6ea9646eb95b5f5ff02839039 = L.circleMarker(
+                [46.0, 47.0],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_51597fa93ca54122970b78e27cf01826 = L.popup({"maxWidth": 500});
+
+        
+            var html_2b08a31f9e7946579ed85cff2fd1813f = $(`<div id="html_2b08a31f9e7946579ed85cff2fd1813f" style="width: 100.0%; height: 100.0%;">Gog - None ¦¦ REV 20:8 ¦¦ "And shall go out to deceive the nations which are in the four quarters of the earth, Gog and Magog, to gather them together to battle: the number of whom [is] as the sand of the sea."</div>`)[0];
+            popup_51597fa93ca54122970b78e27cf01826.setContent(html_2b08a31f9e7946579ed85cff2fd1813f);
+        
+
+        circle_marker_a65c5ae6ea9646eb95b5f5ff02839039.bindPopup(popup_51597fa93ca54122970b78e27cf01826)
+        ;
+
+        
+    
+    
+            var circle_marker_f00a6e1af0dd497fa0909435988a81de = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_3cf045010e9d41aca114e665a3a9ab06 = L.popup({"maxWidth": 500});
+
+        
+            var html_ad137d345850443ebd2f19e1770068d5 = $(`<div id="html_ad137d345850443ebd2f19e1770068d5" style="width: 100.0%; height: 100.0%;">Jerusalem - None ¦¦ REV 3:12 ¦¦ "Him that overcometh will I make a pillar in the temple of my God, and he shall go no more out: and I will write upon him the name of my God, and the name of the city of my God, [which is] new Jerusalem, which cometh down out of heaven from my God: and [I will write upon him] my new name."</div>`)[0];
+            popup_3cf045010e9d41aca114e665a3a9ab06.setContent(html_ad137d345850443ebd2f19e1770068d5);
+        
+
+        circle_marker_f00a6e1af0dd497fa0909435988a81de.bindPopup(popup_3cf045010e9d41aca114e665a3a9ab06)
+        ;
+
+        
+    
+    
+            var circle_marker_40df050c8102457299693114cd8fa08a = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_47077124b6f04a658b59aafbcd3406c1 = L.popup({"maxWidth": 500});
+
+        
+            var html_34cad2b2446b41d99d358e62e42597df = $(`<div id="html_34cad2b2446b41d99d358e62e42597df" style="width: 100.0%; height: 100.0%;">Jerusalem - None ¦¦ REV 21:2 ¦¦ "And I John saw the holy city, new Jerusalem, coming down from God out of heaven, prepared as a bride adorned for her husband."</div>`)[0];
+            popup_47077124b6f04a658b59aafbcd3406c1.setContent(html_34cad2b2446b41d99d358e62e42597df);
+        
+
+        circle_marker_40df050c8102457299693114cd8fa08a.bindPopup(popup_47077124b6f04a658b59aafbcd3406c1)
+        ;
+
+        
+    
+    
+            var circle_marker_fa98089ba9294014b8a413d311859c5e = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_e404e9cde59d4b70a841dc19e829daeb = L.popup({"maxWidth": 500});
+
+        
+            var html_06cb6fc852eb49f48f166da4bf47cc08 = $(`<div id="html_06cb6fc852eb49f48f166da4bf47cc08" style="width: 100.0%; height: 100.0%;">Jerusalem - None ¦¦ REV 21:10 ¦¦ "And he carried me away in the spirit to a great and high mountain, and shewed me that great city, the holy Jerusalem, descending out of heaven from God,"</div>`)[0];
+            popup_e404e9cde59d4b70a841dc19e829daeb.setContent(html_06cb6fc852eb49f48f166da4bf47cc08);
+        
+
+        circle_marker_fa98089ba9294014b8a413d311859c5e.bindPopup(popup_e404e9cde59d4b70a841dc19e829daeb)
+        ;
+
+        
+    
+    
+            var circle_marker_d20efafee2c64baf942ba5de3b72deff = L.circleMarker(
+                [37.76986724, 29.0645011],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_9737a40b6fe04cf29bd529936a7a6403 = L.popup({"maxWidth": 500});
+
+        
+            var html_7c122d4559e448eba4c569cbca7fc382 = $(`<div id="html_7c122d4559e448eba4c569cbca7fc382" style="width: 100.0%; height: 100.0%;">Laodicea - None ¦¦ REV 1:11 ¦¦ "Saying, I am Alpha and Omega, the first and the last: and, What thou seest, write in a book, and send [it] unto the seven churches which are in Asia; unto Ephesus, and unto Smyrna, and unto Pergamos, and unto Thyatira, and unto Sardis, and unto Philadelphia, and unto Laodicea."</div>`)[0];
+            popup_9737a40b6fe04cf29bd529936a7a6403.setContent(html_7c122d4559e448eba4c569cbca7fc382);
+        
+
+        circle_marker_d20efafee2c64baf942ba5de3b72deff.bindPopup(popup_9737a40b6fe04cf29bd529936a7a6403)
+        ;
+
+        
+    
+    
+            var circle_marker_48e781b11c634f1688ffe9f74a5fb375 = L.circleMarker(
+                [37.76986724, 29.0645011],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_56cb3051250940cc8ca343e1ec1d37d2 = L.popup({"maxWidth": 500});
+
+        
+            var html_1a37a216593e4dac8bb3df680e36d61a = $(`<div id="html_1a37a216593e4dac8bb3df680e36d61a" style="width: 100.0%; height: 100.0%;">Laodicea - None ¦¦ REV 3:14 ¦¦ "And unto the angel of the church of the Laodiceans write; These things saith the Amen, the faithful and true witness, the beginning of the creation of God;"</div>`)[0];
+            popup_56cb3051250940cc8ca343e1ec1d37d2.setContent(html_1a37a216593e4dac8bb3df680e36d61a);
+        
+
+        circle_marker_48e781b11c634f1688ffe9f74a5fb375.bindPopup(popup_56cb3051250940cc8ca343e1ec1d37d2)
+        ;
+
+        
+    
+    
+            var circle_marker_84a4b4f65a9b40679976b37d73f02373 = L.circleMarker(
+                [46.0, 47.0],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_2b79d22de49d4fed8b0f5d7d7c6bf482 = L.popup({"maxWidth": 500});
+
+        
+            var html_bba9fdf0e001481cbd558977543b1dd9 = $(`<div id="html_bba9fdf0e001481cbd558977543b1dd9" style="width: 100.0%; height: 100.0%;">Magog - Gog ¦¦ REV 20:8 ¦¦ "And shall go out to deceive the nations which are in the four quarters of the earth, Gog and Magog, to gather them together to battle: the number of whom [is] as the sand of the sea."</div>`)[0];
+            popup_2b79d22de49d4fed8b0f5d7d7c6bf482.setContent(html_bba9fdf0e001481cbd558977543b1dd9);
+        
+
+        circle_marker_84a4b4f65a9b40679976b37d73f02373.bindPopup(popup_2b79d22de49d4fed8b0f5d7d7c6bf482)
+        ;
+
+        
+    
+    
+            var circle_marker_130b68a5c9a2497b84e3a85c3c554393 = L.circleMarker(
+                [31.777444, 35.234935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_ae098e050c2b4ba399c9dd0143cb6636 = L.popup({"maxWidth": 500});
+
+        
+            var html_10bc4ef643a04c3ca428e65682f7ff51 = $(`<div id="html_10bc4ef643a04c3ca428e65682f7ff51" style="width: 100.0%; height: 100.0%;">Mount Zion - Jerusalem ¦¦ REV 14:1 ¦¦ "And I looked, and, lo, a Lamb stood on the mount Sion, and with him an hundred forty [and] four thousand, having his Fatherâ€™s name written in their foreheads."</div>`)[0];
+            popup_ae098e050c2b4ba399c9dd0143cb6636.setContent(html_10bc4ef643a04c3ca428e65682f7ff51);
+        
+
+        circle_marker_130b68a5c9a2497b84e3a85c3c554393.bindPopup(popup_ae098e050c2b4ba399c9dd0143cb6636)
+        ;
+
+        
+    
+    
+            var circle_marker_c8f5aab1557e4108bb17263f1b140f58 = L.circleMarker(
+                [37.307520000000004, 26.548274],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_9c892fe4445b4248ba24095f18c2d62f = L.popup({"maxWidth": 500});
+
+        
+            var html_45f2523451fd4a25bd907fc2b9bce1a2 = $(`<div id="html_45f2523451fd4a25bd907fc2b9bce1a2" style="width: 100.0%; height: 100.0%;">Patmos - None ¦¦ REV 1:9 ¦¦ "I John, who also am your brother, and companion in tribulation, and in the kingdom and patience of Jesus Christ, was in the isle that is called Patmos, for the word of God, and for the testimony of Jesus Christ."</div>`)[0];
+            popup_9c892fe4445b4248ba24095f18c2d62f.setContent(html_45f2523451fd4a25bd907fc2b9bce1a2);
+        
+
+        circle_marker_c8f5aab1557e4108bb17263f1b140f58.bindPopup(popup_9c892fe4445b4248ba24095f18c2d62f)
+        ;
+
+        
+    
+    
+            var circle_marker_ae428f61e88246668cc9898e6641b31f = L.circleMarker(
+                [39.11894592, 27.1651261],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_a4be66ed65f046c1beea8df5a7d2d18c = L.popup({"maxWidth": 500});
+
+        
+            var html_4af7c047ef144db7b757dc5135d8da0c = $(`<div id="html_4af7c047ef144db7b757dc5135d8da0c" style="width: 100.0%; height: 100.0%;">Pergamum - None ¦¦ REV 1:11 ¦¦ "Saying, I am Alpha and Omega, the first and the last: and, What thou seest, write in a book, and send [it] unto the seven churches which are in Asia; unto Ephesus, and unto Smyrna, and unto Pergamos, and unto Thyatira, and unto Sardis, and unto Philadelphia, and unto Laodicea."</div>`)[0];
+            popup_a4be66ed65f046c1beea8df5a7d2d18c.setContent(html_4af7c047ef144db7b757dc5135d8da0c);
+        
+
+        circle_marker_ae428f61e88246668cc9898e6641b31f.bindPopup(popup_a4be66ed65f046c1beea8df5a7d2d18c)
+        ;
+
+        
+    
+    
+            var circle_marker_06046b44a4fc475f88767b30ba2321e2 = L.circleMarker(
+                [39.11894592, 27.1651261],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_ab4938fc864e4c1e94c5d48e02c72630 = L.popup({"maxWidth": 500});
+
+        
+            var html_e1e2dfa6c00843659246442f1241c3ca = $(`<div id="html_e1e2dfa6c00843659246442f1241c3ca" style="width: 100.0%; height: 100.0%;">Pergamum - None ¦¦ REV 2:12 ¦¦ "And to the angel of the church in Pergamos write; These things saith he which hath the sharp sword with two edges;"</div>`)[0];
+            popup_ab4938fc864e4c1e94c5d48e02c72630.setContent(html_e1e2dfa6c00843659246442f1241c3ca);
+        
+
+        circle_marker_06046b44a4fc475f88767b30ba2321e2.bindPopup(popup_ab4938fc864e4c1e94c5d48e02c72630)
+        ;
+
+        
+    
+    
+            var circle_marker_f946c56a9c584825b64fbeacc12b5037 = L.circleMarker(
+                [38.34904803, 28.51946209],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_3e5020b720a84e11811a5fd68661a885 = L.popup({"maxWidth": 500});
+
+        
+            var html_b03b0cd8cdbb49558787ca7e1919ff7b = $(`<div id="html_b03b0cd8cdbb49558787ca7e1919ff7b" style="width: 100.0%; height: 100.0%;">Philadelphia - None ¦¦ REV 1:11 ¦¦ "Saying, I am Alpha and Omega, the first and the last: and, What thou seest, write in a book, and send [it] unto the seven churches which are in Asia; unto Ephesus, and unto Smyrna, and unto Pergamos, and unto Thyatira, and unto Sardis, and unto Philadelphia, and unto Laodicea."</div>`)[0];
+            popup_3e5020b720a84e11811a5fd68661a885.setContent(html_b03b0cd8cdbb49558787ca7e1919ff7b);
+        
+
+        circle_marker_f946c56a9c584825b64fbeacc12b5037.bindPopup(popup_3e5020b720a84e11811a5fd68661a885)
+        ;
+
+        
+    
+    
+            var circle_marker_c97e84bf81e74b0db274ba0a324ade28 = L.circleMarker(
+                [38.34904803, 28.51946209],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_a5280cb4010846eda030312b9fd78cfa = L.popup({"maxWidth": 500});
+
+        
+            var html_11dee11cd7ae40019a21bf5dc82fe93a = $(`<div id="html_11dee11cd7ae40019a21bf5dc82fe93a" style="width: 100.0%; height: 100.0%;">Philadelphia - None ¦¦ REV 3:7 ¦¦ "And to the angel of the church in Philadelphia write; These things saith he that is holy, he that is true, he that hath the key of David, he that openeth, and no man shutteth; and shutteth, and no man openeth;"</div>`)[0];
+            popup_a5280cb4010846eda030312b9fd78cfa.setContent(html_11dee11cd7ae40019a21bf5dc82fe93a);
+        
+
+        circle_marker_c97e84bf81e74b0db274ba0a324ade28.bindPopup(popup_a5280cb4010846eda030312b9fd78cfa)
+        ;
+
+        
+    
+    
+            var circle_marker_da7ae2d649204806b54e69d21a824a1d = L.circleMarker(
+                [38.4768269, 28.11413119],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_6869bd356e5847238e8e3bba7c0d26dd = L.popup({"maxWidth": 500});
+
+        
+            var html_87d6e2b2dd2b4366b4ba7fee135ddb75 = $(`<div id="html_87d6e2b2dd2b4366b4ba7fee135ddb75" style="width: 100.0%; height: 100.0%;">Sardis - None ¦¦ REV 1:11 ¦¦ "Saying, I am Alpha and Omega, the first and the last: and, What thou seest, write in a book, and send [it] unto the seven churches which are in Asia; unto Ephesus, and unto Smyrna, and unto Pergamos, and unto Thyatira, and unto Sardis, and unto Philadelphia, and unto Laodicea."</div>`)[0];
+            popup_6869bd356e5847238e8e3bba7c0d26dd.setContent(html_87d6e2b2dd2b4366b4ba7fee135ddb75);
+        
+
+        circle_marker_da7ae2d649204806b54e69d21a824a1d.bindPopup(popup_6869bd356e5847238e8e3bba7c0d26dd)
+        ;
+
+        
+    
+    
+            var circle_marker_243f9baecc484b1999e9891bf039fcc9 = L.circleMarker(
+                [38.4768269, 28.11413119],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_df8409e6c68e48eeb1a73ec300bd1c37 = L.popup({"maxWidth": 500});
+
+        
+            var html_81ead2ee23404d6aab52d1dca3b19de7 = $(`<div id="html_81ead2ee23404d6aab52d1dca3b19de7" style="width: 100.0%; height: 100.0%;">Sardis - None ¦¦ REV 3:1 ¦¦ "And unto the angel of the church in Sardis write; These things saith he that hath the seven Spirits of God, and the seven stars; I know thy works, that thou hast a name that thou livest, and art dead."</div>`)[0];
+            popup_df8409e6c68e48eeb1a73ec300bd1c37.setContent(html_81ead2ee23404d6aab52d1dca3b19de7);
+        
+
+        circle_marker_243f9baecc484b1999e9891bf039fcc9.bindPopup(popup_df8409e6c68e48eeb1a73ec300bd1c37)
+        ;
+
+        
+    
+    
+            var circle_marker_bd17efd6121d49c59b2bac9bd80c7ea0 = L.circleMarker(
+                [38.4768269, 28.11413119],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_0bbdb7e4025d4f4eaa83ecb000ea9150 = L.popup({"maxWidth": 500});
+
+        
+            var html_1117dd852f984b618b60193bd145c803 = $(`<div id="html_1117dd852f984b618b60193bd145c803" style="width: 100.0%; height: 100.0%;">Sardis - None ¦¦ REV 3:4 ¦¦ "Thou hast a few names even in Sardis which have not defiled their garments; and they shall walk with me in white: for they are worthy."</div>`)[0];
+            popup_0bbdb7e4025d4f4eaa83ecb000ea9150.setContent(html_1117dd852f984b618b60193bd145c803);
+        
+
+        circle_marker_bd17efd6121d49c59b2bac9bd80c7ea0.bindPopup(popup_0bbdb7e4025d4f4eaa83ecb000ea9150)
+        ;
+
+        
+    
+    
+            var circle_marker_542aa5f7e55a46dab535cb71fa977101 = L.circleMarker(
+                [38.45196038, 27.16192105],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_7cb9980171c74dd793b67dff6387632f = L.popup({"maxWidth": 500});
+
+        
+            var html_ec8bd56911644fb89ceb741847d5c262 = $(`<div id="html_ec8bd56911644fb89ceb741847d5c262" style="width: 100.0%; height: 100.0%;">Smyrna - None ¦¦ REV 1:11 ¦¦ "Saying, I am Alpha and Omega, the first and the last: and, What thou seest, write in a book, and send [it] unto the seven churches which are in Asia; unto Ephesus, and unto Smyrna, and unto Pergamos, and unto Thyatira, and unto Sardis, and unto Philadelphia, and unto Laodicea."</div>`)[0];
+            popup_7cb9980171c74dd793b67dff6387632f.setContent(html_ec8bd56911644fb89ceb741847d5c262);
+        
+
+        circle_marker_542aa5f7e55a46dab535cb71fa977101.bindPopup(popup_7cb9980171c74dd793b67dff6387632f)
+        ;
+
+        
+    
+    
+            var circle_marker_dc62aef44b144132b701bf53ac0a3aa5 = L.circleMarker(
+                [38.45196038, 27.16192105],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_4d29f7208dc2440da7aee54d204ef07e = L.popup({"maxWidth": 500});
+
+        
+            var html_650def5cbd6443c49dbc2f548918f1b2 = $(`<div id="html_650def5cbd6443c49dbc2f548918f1b2" style="width: 100.0%; height: 100.0%;">Smyrna - None ¦¦ REV 2:8 ¦¦ "And unto the angel of the church in Smyrna write; These things saith the first and the last, which was dead, and is alive;"</div>`)[0];
+            popup_4d29f7208dc2440da7aee54d204ef07e.setContent(html_650def5cbd6443c49dbc2f548918f1b2);
+        
+
+        circle_marker_dc62aef44b144132b701bf53ac0a3aa5.bindPopup(popup_4d29f7208dc2440da7aee54d204ef07e)
+        ;
+
+        
+    
+    
+            var circle_marker_3fa2b5ee19b34865b7bd0dc829532f88 = L.circleMarker(
+                [31.19656033, 35.39648412],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_3902d8429c8b41dc9f2b398dc8b6b5c6 = L.popup({"maxWidth": 500});
+
+        
+            var html_7721d8d80ab64682ae8a667b35e309a7 = $(`<div id="html_7721d8d80ab64682ae8a667b35e309a7" style="width: 100.0%; height: 100.0%;">Sodom - None ¦¦ REV 11:8 ¦¦ "And their dead bodies [shall lie] in the street of the great city, which spiritually is called Sodom and Egypt, where also our Lord was crucified."</div>`)[0];
+            popup_3902d8429c8b41dc9f2b398dc8b6b5c6.setContent(html_7721d8d80ab64682ae8a667b35e309a7);
+        
+
+        circle_marker_3fa2b5ee19b34865b7bd0dc829532f88.bindPopup(popup_3902d8429c8b41dc9f2b398dc8b6b5c6)
+        ;
+
+        
+    
+    
+            var circle_marker_bea9c7e34191497d99860f5f7c6f39ec = L.circleMarker(
+                [38.92579129, 27.85655575],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_b3918df54ed7433bbb2422c6af930096 = L.popup({"maxWidth": 500});
+
+        
+            var html_925ea06cec9847a4ab37ca5eae55fc05 = $(`<div id="html_925ea06cec9847a4ab37ca5eae55fc05" style="width: 100.0%; height: 100.0%;">Thyatira - None ¦¦ REV 1:11 ¦¦ "Saying, I am Alpha and Omega, the first and the last: and, What thou seest, write in a book, and send [it] unto the seven churches which are in Asia; unto Ephesus, and unto Smyrna, and unto Pergamos, and unto Thyatira, and unto Sardis, and unto Philadelphia, and unto Laodicea."</div>`)[0];
+            popup_b3918df54ed7433bbb2422c6af930096.setContent(html_925ea06cec9847a4ab37ca5eae55fc05);
+        
+
+        circle_marker_bea9c7e34191497d99860f5f7c6f39ec.bindPopup(popup_b3918df54ed7433bbb2422c6af930096)
+        ;
+
+        
+    
+    
+            var circle_marker_c42360a05ebf48cdbd0d6eeb3f70506c = L.circleMarker(
+                [38.92579129, 27.85655575],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_a2166e281edf4a1e8aa68a738af2e24b = L.popup({"maxWidth": 500});
+
+        
+            var html_6983ac36fa4b4cf0ba04a3d5f3ff181b = $(`<div id="html_6983ac36fa4b4cf0ba04a3d5f3ff181b" style="width: 100.0%; height: 100.0%;">Thyatira - None ¦¦ REV 2:18 ¦¦ "And unto the angel of the church in Thyatira write; These things saith the Son of God, who hath his eyes like unto a flame of fire, and his feet [are] like fine brass;"</div>`)[0];
+            popup_a2166e281edf4a1e8aa68a738af2e24b.setContent(html_6983ac36fa4b4cf0ba04a3d5f3ff181b);
+        
+
+        circle_marker_c42360a05ebf48cdbd0d6eeb3f70506c.bindPopup(popup_a2166e281edf4a1e8aa68a738af2e24b)
+        ;
+
+        
+    
+    
+            var circle_marker_2577fe76a1b74c228c2f3fb5c439162f = L.circleMarker(
+                [38.92579129, 27.85655575],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8766a232d7e94978a22b64ca91045144);
+        
+    
+        var popup_ec2c2312b55a4a27a87c8a651929b4d7 = L.popup({"maxWidth": 500});
+
+        
+            var html_049ac468b3474346bc7114f9188be310 = $(`<div id="html_049ac468b3474346bc7114f9188be310" style="width: 100.0%; height: 100.0%;">Thyatira - None ¦¦ REV 2:24 ¦¦ "But unto you I say, and unto the rest in Thyatira, as many as have not this doctrine, and which have not known the depths of Satan, as they speak; I will put upon you none other burden."</div>`)[0];
+            popup_ec2c2312b55a4a27a87c8a651929b4d7.setContent(html_049ac468b3474346bc7114f9188be310);
+        
+
+        circle_marker_2577fe76a1b74c228c2f3fb5c439162f.bindPopup(popup_ec2c2312b55a4a27a87c8a651929b4d7)
+        ;
+
+        
+    
+    
+            var feature_group_7542b3c22af64c90833ad2d0b50085d5 = L.featureGroup(
+                {}
+            ).addTo(map_b2e076229a234bd6b108fbb2496533a1);
+        
+    
+            var heat_map_ca3dd6c7e98343069a1504747b0ea03a = L.heatLayer(
+                [[32.58418314, 35.18229166], [39.23, 32.73], [32.53650369, 44.42088287], [32.53650369, 44.42088287], [32.53650369, 44.42088287], [32.53650369, 44.42088287], [32.53650369, 44.42088287], [32.53650369, 44.42088287], [30.10864, 31.338774], [37.95331434, 27.36782512], [37.95331434, 27.36782512], [35.090577, 40.42778], [35.090577, 40.42778], [46.0, 47.0], [31.777444, 35.234935], [31.777444, 35.234935], [31.777444, 35.234935], [37.76986724, 29.0645011], [37.76986724, 29.0645011], [46.0, 47.0], [31.777444, 35.234935], [37.307520000000004, 26.548274], [39.11894592, 27.1651261], [39.11894592, 27.1651261], [38.34904803, 28.51946209], [38.34904803, 28.51946209], [38.4768269, 28.11413119], [38.4768269, 28.11413119], [38.4768269, 28.11413119], [38.45196038, 27.16192105], [38.45196038, 27.16192105], [31.19656033, 35.39648412], [38.92579129, 27.85655575], [38.92579129, 27.85655575], [38.92579129, 27.85655575]],
+                {"blur": 15, "max": 1.0, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
+            ).addTo(feature_group_7542b3c22af64c90833ad2d0b50085d5);
+        
+    
+            var layer_control_3f74a70a531747ef87c52d9f95210896 = {
+                base_layers : {
+                    "Mapbox Satellite" : tile_layer_fa1ac340f2684b029d2cf32398eb3b2f,
+                },
+                overlays :  {
+                    "Verse Locations" : feature_group_8766a232d7e94978a22b64ca91045144,
+                    "Heat Map" : feature_group_7542b3c22af64c90833ad2d0b50085d5,
+                },
+            };
+            L.control.layers(
+                layer_control_3f74a70a531747ef87c52d9f95210896.base_layers,
+                layer_control_3f74a70a531747ef87c52d9f95210896.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_b2e076229a234bd6b108fbb2496533a1);
+        
+</script>

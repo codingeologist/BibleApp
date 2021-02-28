@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<!--- Basic Webpage needs
+   	================================================== -->
+    <meta charset="UTF-8">
+	<meta name="description" content="Mapping the Holy Bible">
+
+  	<!--- Mobile needs
+   	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  	<!--- Stylesheet
+   	================================================== -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',
+     filename='style.css') }}">
+
+  	<!--- Logo Image
+   	================================================== -->
+    <link rel="shortcut icon" href="{{ url_for('static',
+	filename='bible-3840940.png') }}">
+    <title>About</title>
+</head>
+<header>
+
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <a href="/"><button type="button" class="btn btn-primary" aria-label="Left-Align" style="margin-top:15px; margin-bottom: 15px; height: 100px; margin-right: 100px">Home</button></a>
+        <a href="/about"><button type="button" class="btn btn-primary" aria-label="Left-Align" style="margin-top:15px; margin-bottom: 15px; height: 100px; margin-right: 100px">About</button></a>
+        <a href="/map"><button type="button" class="btn btn-primary" aria-label="Left-Align" style="margin-top:15px; margin-bottom: 15px; height: 100px; margin-right: 100px">Map</button></a>
+        <a href="/contact"><button type="button" class="btn btn-primary" aria-label="Left-Align" style="margin-top:15px; margin-bottom: 15px; height: 100px; margin-right: 100px">Contact</button></a>
+    </div>
+
+</header>
+
+<body>
+
+    <p>
+		<a href="/fullmap">Full Map</button></a>
+		<a href="/genesis">Book of Genesis Map</button></a>
+		<a href="/exodus">Book of Exodus Map</button></a>
+		<a href="/psalms">Psalms Map</button></a>
+		<a href="/songofsolomon">Song of Solomon Map</button></a>
+		<a href="/hebrews">Hebrews Map</button></a>
+		<a href="/matthew">Matthew Map</button></a>
+		<a href="/mark">Mark Map</button></a>
+		<a href="/luke">Luke Map</button></a>
+		<a href="/john">John Map</button></a>
+	</p>
+
+</body>
+</html>
